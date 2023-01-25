@@ -34,13 +34,13 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-600 font-medium">
               Stephan D. Ramalho
             </h2>
-            <h3>Developer and Designer</h3>
-            <p>
+            <h3 className="text-2xl py-2">Developer and Designer</h3>
+            <p className="text-md py-5 leading-8 text-gray-800">
               A software engineer who prizes collaboration, meeting goals, and
               always learning new things. Let's learn together!
             </p>
           </div>
-          <div>
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
             <a href="http://www.linkedin.com/in/stephan-ramalho">
               <AiFillLinkedin />
             </a>
