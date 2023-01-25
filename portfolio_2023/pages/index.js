@@ -4,7 +4,9 @@ import { AiFillLinkedin } from 'react-icons/ai'
 import { GoMarkGithub } from 'react-icons/go'
 import Image from 'next/image'
 import pictureOfMe from '../public/pictureofme.jpg'
-
+import design from '../public/design.png'
+import code from '../public/code.png'
+import consulting from '../public/consulting.png'
 export default function Home() {
   return (
     <div>
@@ -76,6 +78,38 @@ export default function Home() {
               I strive to constantly expand my knowledge base. This list will be
               frequently updated.
             </p>
+          </div>
+
+          <div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={design} width={100} height={100} />
+              <h3 className="text-lg font-md pt-8 pb-2">Responsive Designs</h3>
+              <p className="py-2 ">
+                Creating elegant designs suited for your website and business
+                needs.
+              </p>
+              <h4 className="py-4 text-teal-600">Design Tools I use</h4>
+              <p className="text-gray-800 py-1">PhotoShop</p>
+              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">React</p>
+              <p className="text-gray-800 py-1">Vue</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+              <Image id="wrong" src={code} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                Intelligent Backend Design
+              </h3>
+              <p className="py-2">
+                Whether it be SQL or nonSQL databases, I have experience
+                creating complex associations between entities that allow you to
+                easily access your business' data.
+              </p>
+              <h4 className="py-4 text-teal-600">Backend Tools I Use</h4>
+              <p className="text-gray-800 py-1">Sequelize</p>
+              <p className="text-gray-800 py-1">MongoDB/Mongoose</p>
+              <p className="text-gray-800 py-1">Postico</p>
+              <p className="text-gray-800 py-1">Insomnia</p>
+            </div>
           </div>
         </section>
       </main>
