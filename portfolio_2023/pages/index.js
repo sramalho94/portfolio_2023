@@ -14,8 +14,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px-10">
-        <section className="min-h-screen">
+      <main className="bg-white px-10 min-h-screen">
+        <section className="">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">sramalho94</h1>
             <ul className="flex items-center">
@@ -57,6 +57,25 @@ export default function Home() {
               layout="fill"
               objectFit="cover"
             />
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">Skills I have</h3>
+            <p className="text-md py-2 leading-8 text-gray-800">
+              Front End: React, Vue, Next, Tailwind
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-800">
+              Back End: MongoDB, Sequelize, Express
+            </p>
+            <span className="text-teal-500">Coding Languages:</span>
+            <p className="text-md py-2 leading-8 text-gray-800">
+              JavaScript, HTML, CSS, Python, C
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-800">
+              I strive to constantly expand my knowledge base. This list will be
+              frequently updated.
+            </p>
           </div>
         </section>
       </main>
