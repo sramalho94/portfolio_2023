@@ -72,7 +72,7 @@ export default function Home() {
         </section>
         <section>
           <div className="text-center">
-            <h3 className="text-3xl py-1 dark:text-white">Skills I have</h3>
+            <h3 className="text-3xl py-1 dark:text-white">My Skills</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               Front End: React, Vue, Next, Tailwind
             </p>
@@ -257,10 +257,6 @@ export default function Home() {
                   Project Link
                 </a>
                 <a href="https://github.com/sramalho94/PokePro">Github Link</a>
-              </div>
-              <div>
-                <a href=""></a>
-                <a href=""></a>
               </div>
             </div>
           </div>
