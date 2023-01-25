@@ -19,8 +19,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px-10 min-h-screen">
-        <section className="">
+      <main className="bg-white px-10 md:px-20 lg:px-40">
+        <section className="mb-20">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">sramalho94</h1>
             <ul className="flex items-center">
@@ -38,11 +38,11 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium">
+            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
               Stephan D. Ramalho
             </h2>
-            <h3 className="text-2xl py-2">Developer and Designer</h3>
-            <p className="text-md py-5 leading-8 text-gray-800">
+            <h3 className="text-2xl py-2 md:text-3xl">Web Developer</h3>
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl mx-auto max-w-md">
               A software engineer who prizes collaboration, meeting goals, and
               always learning new things. Let's learn together!
             </p>
@@ -124,7 +124,16 @@ export default function Home() {
           </div>
           <div>
             <div>
-              <Image src />
+              <Image src={battleships} />
+            </div>
+            <div>
+              <Image src={cornhub} />
+            </div>
+            <div>
+              <Image src={faultsinour} />
+            </div>
+            <div>
+              <Image src={pokepro} />
             </div>
           </div>
         </section>
