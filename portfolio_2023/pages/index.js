@@ -93,13 +93,15 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gradient-to-r from-teal-600">
               <Image src={design} width={100} height={100} />
               <h3 className="text-lg font-md pt-8 pb-2 dark:text-white">
-                Responsive Designs
+                Responsive Frontend Projects
               </h3>
               <p className="py-2 dark:text-white">
                 Creating elegant designs suited for your website and business
                 needs.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I use</h4>
+              <h4 className="py-4 text-teal-600">
+                Development and Design Tools I use
+              </h4>
               <p className="text-gray-800 py-1 dark:text-white">PhotoShop</p>
               <p className="text-gray-800 py-1 dark:text-white">Figma</p>
               <p className="text-gray-800 py-1 dark:text-white">React</p>
@@ -127,8 +129,10 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
-            <p className="py-2 dark:text-white">
+            <h3 className="text-3xl py-1 dark:text-white text-center">
+              Portfolio
+            </h3>
+            <p className="py-2 text-center dark:text-white">
               An ever-growing list of the projects I have created and worked on
             </p>
           </div>
@@ -141,6 +145,27 @@ export default function Home() {
                 height={'100%'}
                 layout="responsive"
               />
+              <p className="text-lg font-medium pt-8 pb-2 text-center  dark:text-white">
+                Admiral Stephan's BattleShips
+              </p>
+              <p className="py-2 text-center dark:text-white">
+                In this first project, I created a web browser version of the
+                classic board game, Battleship. Using only vanilla JavaScript I
+                created a fully functional game where the player goes against an
+                AI. When either the player or the AI runs out of ships, the game
+                is over.
+              </p>
+              <div className="flex flex-row py-2 justify-center text-teal-600 dark:text-white">
+                <a
+                  href="https://admiralstephanbattleship.surge.sh/"
+                  className="mr-5"
+                >
+                  Project Link
+                </a>
+                <a href="https://github.com/sramalho94/Admiral-Stephan-Battleship-Project">
+                  Github Link
+                </a>
+              </div>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
@@ -150,6 +175,31 @@ export default function Home() {
                 height={'100%'}
                 layout="responsive"
               />
+              <p className="text-lg font-medium pt-8 pb-2 text-center  dark:text-white">
+                Corney Island
+              </p>
+              <p className="py-2 text-center dark:text-white">
+                In this group hackathon project, our group created a theme
+                parked themed web page. There are a number of themes and
+                attractions to navigate through as you explore the page. The
+                user also has the capability to add and delete attractions as
+                well.
+              </p>
+              <div className="flex flex-row py-2 justify-center text-teal-600 dark:text-white">
+                <a
+                  href="https://corney-island2022.herokuapp.com/"
+                  className="mr-5"
+                >
+                  Project Link
+                </a>
+                <a href="https://github.com/sramalho94/Corney_Island_Group_Project">
+                  Github Link
+                </a>
+              </div>
+              <div>
+                <a href=""></a>
+                <a href=""></a>
+              </div>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
@@ -159,6 +209,29 @@ export default function Home() {
                 height={'100%'}
                 layout="responsive"
               />
+              <p className="text-lg font-medium pt-8 pb-2  dark:text-white"></p>
+              <p className="py-2 text-center dark:text-white">
+                In this first project, I created a web browser version of the
+                classic board game, Battleship. Using only vanilla JavaScript I
+                created a fully functional game where the player goes against an
+                AI. When either the player or the AI runs out of ships, the game
+                is over.
+              </p>
+              <div className="flex flex-row py-2 justify-center text-teal-600 dark:text-white">
+                <a
+                  href="https://admiralstephanbattleship.surge.sh/"
+                  className="mr-5"
+                >
+                  Project Link
+                </a>
+                <a href="https://github.com/sramalho94/Admiral-Stephan-Battleship-Project">
+                  Github Link
+                </a>
+              </div>
+              <div>
+                <a href=""></a>
+                <a href=""></a>
+              </div>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
@@ -168,6 +241,29 @@ export default function Home() {
                 height={'100%'}
                 layout="responsive"
               />
+              <p className="text-lg font-medium pt-8 pb-2  dark:text-white"></p>
+              <p className="py-2 text-center dark:text-white">
+                In this first project, I created a web browser version of the
+                classic board game, Battleship. Using only vanilla JavaScript I
+                created a fully functional game where the player goes against an
+                AI. When either the player or the AI runs out of ships, the game
+                is over.
+              </p>
+              <div className="flex flex-row py-2 justify-center text-teal-600 dark:text-white">
+                <a
+                  href="https://admiralstephanbattleship.surge.sh/"
+                  className="mr-5"
+                >
+                  Project Link
+                </a>
+                <a href="https://github.com/sramalho94/Admiral-Stephan-Battleship-Project">
+                  Github Link
+                </a>
+              </div>
+              <div>
+                <a href=""></a>
+                <a href=""></a>
+              </div>
             </div>
           </div>
         </section>
