@@ -148,7 +148,7 @@ export default function Home() {
               <p className="text-lg font-medium pt-8 pb-2 text-center  dark:text-white">
                 Admiral Stephan's BattleShips
               </p>
-              <p className="py-2 text-center dark:text-white">
+              <p className="py-2 text-center max-w-md mx-auto dark:text-white">
                 In this first project, I created a web browser version of the
                 classic board game, Battleship. Using only vanilla JavaScript I
                 created a fully functional game where the player goes against an
@@ -178,7 +178,7 @@ export default function Home() {
               <p className="text-lg font-medium pt-8 pb-2 text-center  dark:text-white">
                 Corney Island
               </p>
-              <p className="py-2 text-center dark:text-white">
+              <p className="py-2 text-center max-w-md mx-auto dark:text-white">
                 In this group hackathon project, our group created a theme
                 parked themed web page. There are a number of themes and
                 attractions to navigate through as you explore the page. The
@@ -212,7 +212,7 @@ export default function Home() {
               <p className="text-lg font-medium pt-8 pb-2  dark:text-white text-center">
                 The Faults In Our Stars
               </p>
-              <p className="py-2 text-center dark:text-white">
+              <p className="py-2 text-center max-w-md mx-auto dark:text-white">
                 The Faults In Our Stars is a hyper-personalized, social
                 experience bringing astrology into the 22nd century. Our aim is
                 to create social circles revolving around zodiac signs. This
@@ -242,7 +242,7 @@ export default function Home() {
               <p className="text-lg font-medium pt-8 pb-2 text-center  dark:text-white">
                 PokePro
               </p>
-              <p className="py-2 text-center dark:text-white">
+              <p className="py-2 text-center max-w-md mx-auto dark:text-white">
                 In this final project for General Assembly's Software
                 Engineering Immersive, I made a full stack web application that
                 allows users to look up trainers in the base pokemon games and
