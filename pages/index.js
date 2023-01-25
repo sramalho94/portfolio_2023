@@ -209,28 +209,26 @@ export default function Home() {
                 height={'100%'}
                 layout="responsive"
               />
-              <p className="text-lg font-medium pt-8 pb-2  dark:text-white"></p>
+              <p className="text-lg font-medium pt-8 pb-2  dark:text-white text-center">
+                The Faults In Our Stars
+              </p>
               <p className="py-2 text-center dark:text-white">
-                In this first project, I created a web browser version of the
-                classic board game, Battleship. Using only vanilla JavaScript I
-                created a fully functional game where the player goes against an
-                AI. When either the player or the AI runs out of ships, the game
-                is over.
+                The Faults In Our Stars is a hyper-personalized, social
+                experience bringing astrology into the 22nd century. Our aim is
+                to create social circles revolving around zodiac signs. This
+                website will allow you to connect to people that are compatible
+                to your zodiac sign and at the same time rate the users based on
+                their personalities and sign compatibility; wether good or bad,
+                create new social circles, that will improve you work and love
+                life.
               </p>
               <div className="flex flex-row py-2 justify-center text-teal-600 dark:text-white">
-                <a
-                  href="https://admiralstephanbattleship.surge.sh/"
-                  className="mr-5"
-                >
+                <a href="https://starz-app.herokuapp.com/" className="mr-5">
                   Project Link
                 </a>
-                <a href="https://github.com/sramalho94/Admiral-Stephan-Battleship-Project">
+                <a href="https://github.com/BrianDLara/The-Faults-In-Our-Stars_Frontend">
                   Github Link
                 </a>
-              </div>
-              <div>
-                <a href=""></a>
-                <a href=""></a>
               </div>
             </div>
             <div className="basis-1/3 flex-1">
@@ -241,24 +239,24 @@ export default function Home() {
                 height={'100%'}
                 layout="responsive"
               />
-              <p className="text-lg font-medium pt-8 pb-2  dark:text-white"></p>
+              <p className="text-lg font-medium pt-8 pb-2 text-center  dark:text-white">
+                PokePro
+              </p>
               <p className="py-2 text-center dark:text-white">
-                In this first project, I created a web browser version of the
-                classic board game, Battleship. Using only vanilla JavaScript I
-                created a fully functional game where the player goes against an
-                AI. When either the player or the AI runs out of ships, the game
-                is over.
+                In this final project for General Assembly's Software
+                Engineering Immersive, I made a full stack web application that
+                allows users to look up trainers in the base pokemon games and
+                see their pokemon team. Suggestions are given on how to beat
+                each pokemon based on that Pokemon's type.
               </p>
               <div className="flex flex-row py-2 justify-center text-teal-600 dark:text-white">
                 <a
-                  href="https://admiralstephanbattleship.surge.sh/"
+                  href="https://pokepro-frontend.herokuapp.com/"
                   className="mr-5"
                 >
                   Project Link
                 </a>
-                <a href="https://github.com/sramalho94/Admiral-Stephan-Battleship-Project">
-                  Github Link
-                </a>
+                <a href="https://github.com/sramalho94/PokePro">Github Link</a>
               </div>
               <div>
                 <a href=""></a>
