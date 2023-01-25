@@ -6,7 +6,10 @@ import Image from 'next/image'
 import pictureOfMe from '../public/pictureofme.jpg'
 import design from '../public/design.png'
 import code from '../public/code.png'
-import consulting from '../public/consulting.png'
+import battleships from '../public/battleships.png'
+import cornhub from '../public/cornhub.png'
+import faultsinour from '../public/faultsinourstars.png'
+import pokepro from '../public/PokePro.png'
 export default function Home() {
   return (
     <div>
@@ -109,6 +112,19 @@ export default function Home() {
               <p className="text-gray-800 py-1">MongoDB/Mongoose</p>
               <p className="text-gray-800 py-1">Postico</p>
               <p className="text-gray-800 py-1">Insomnia</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">Portfolio</h3>
+            <p className="py-2 ">
+              An ever-growing list of the projects I have created and worked on
+            </p>
+          </div>
+          <div>
+            <div>
+              <Image src />
             </div>
           </div>
         </section>
