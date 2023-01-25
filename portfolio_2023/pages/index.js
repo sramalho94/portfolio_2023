@@ -2,6 +2,8 @@ import Head from 'next/head'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { GoMarkGithub } from 'react-icons/go'
+import Image from 'next/image'
+import pictureOfMe from '../public/pictureofme.jpg'
 
 export default function Home() {
   return (
@@ -47,6 +49,14 @@ export default function Home() {
             <a href="https://github.com/sramalho94">
               <GoMarkGithub />
             </a>
+          </div>
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
+            <Image
+              className=" pt-4 mx-auto h-60 w-60 rounded-full"
+              src={pictureOfMe}
+              layout="fill"
+              objectFit="cover"
+            />
           </div>
         </section>
       </main>
