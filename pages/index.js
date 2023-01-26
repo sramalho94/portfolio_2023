@@ -54,8 +54,12 @@ export default function Home() {
               Web Developer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl mx-auto max-w-md dark:text-white">
-              A software engineer who prizes collaboration, meeting goals, and
-              always learning new things. Let's learn together!
+              I am a software engineer with a background in providing
+              unparalleled customer service to clients in a variety of retail
+              environments. My previous experience has taught me how to embrace
+              problem solving, communicate and collaborate with individuals and
+              teams, and perform tasks in fast-paced settings. I love to learn
+              new things, let's learn from each other!
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
