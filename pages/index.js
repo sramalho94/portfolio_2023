@@ -90,7 +90,7 @@ export default function Home() {
           </div>
 
           <div className="lg:flex gap-20 mx-0">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gradient-to-r from-teal-600">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 bg-gradient-to-r from-emerald-200 rounded-lg dark:bg-gradient-to-r from-teal-600">
               <Image src={design} width={100} height={100} />
               <h3 className="text-lg font-md pt-8 pb-2 dark:text-white">
                 Responsive Frontend Projects
@@ -99,7 +99,7 @@ export default function Home() {
                 Creating elegant designs suited for your website and business
                 needs.
               </p>
-              <h4 className="py-4 text-teal-600">
+              <h4 className="py-4 text-teal-600 dark:text-teal-300">
                 Development and Design Tools I use
               </h4>
               <p className="text-gray-800 py-1 dark:text-white">PhotoShop</p>
@@ -107,7 +107,7 @@ export default function Home() {
               <p className="text-gray-800 py-1 dark:text-white">React</p>
               <p className="text-gray-800 py-1 dark:text-white">Vue</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gradient-to-l from-teal-600">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 bg-gradient-to-r from-emerald-200 rounded-lg dark:bg-gradient-to-l from-teal-600">
               <Image id="wrong" src={code} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2  dark:text-white">
                 Intelligent Backend Design
@@ -117,7 +117,9 @@ export default function Home() {
                 creating complex associations between entities that allow you to
                 easily access your business' data.
               </p>
-              <h4 className="py-4 text-teal-600 ">Backend Tools I Use</h4>
+              <h4 className="py-4 text-teal-600 dark:text-teal-300">
+                Backend Tools I Use
+              </h4>
               <p className="text-gray-800 py-1 dark:text-white">Sequelize</p>
               <p className="text-gray-800 py-1 dark:text-white">
                 MongoDB/Mongoose
@@ -129,7 +131,7 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white text-center">
+            <h3 className="text-3xl py-1 text-teal-600 dark:text-teal-300 text-center">
               Portfolio
             </h3>
             <p className="py-2 text-center dark:text-white">
@@ -137,7 +139,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 shadow-lg bg-gradient-to-r from-emerald-200 rounded-lg">
               <Image
                 src={battleships}
                 className="rounded-lg object-cover"
@@ -155,19 +157,22 @@ export default function Home() {
                 AI. When either the player or the AI runs out of ships, the game
                 is over.
               </p>
-              <div className="flex flex-row py-2 justify-center text-teal-600 dark:text-white">
+              <div className="flex flex-row py-2 justify-center">
                 <a
                   href="https://admiralstephanbattleship.surge.sh/"
-                  className="mr-5"
+                  className="mr-5 text-teal-600 dark:text-teal-300 "
                 >
                   Project Link
                 </a>
-                <a href="https://github.com/sramalho94/Admiral-Stephan-Battleship-Project">
+                <a
+                  href="https://github.com/sramalho94/Admiral-Stephan-Battleship-Project"
+                  className="text-teal-600 dark:text-teal-300"
+                >
                   Github Link
                 </a>
               </div>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 shadow-lg bg-gradient-to-r from-emerald-200 rounded-lg dark:bg-gradient-to-r from-teal-600">
               <Image
                 src={cornhub}
                 className="rounded-lg object-cover"
@@ -185,23 +190,22 @@ export default function Home() {
                 user also has the capability to add and delete attractions as
                 well.
               </p>
-              <div className="flex flex-row py-2 justify-center text-teal-600 dark:text-white">
+              <div className="flex flex-row py-2 justify-center">
                 <a
                   href="https://corney-island2022.herokuapp.com/"
-                  className="mr-5"
+                  className="mr-5 text-teal-600 dark:text-teal-300"
                 >
                   Project Link
                 </a>
-                <a href="https://github.com/sramalho94/Corney_Island_Group_Project">
+                <a
+                  href="https://github.com/sramalho94/Corney_Island_Group_Project"
+                  className="text-teal-600 dark:text-teal-300"
+                >
                   Github Link
                 </a>
               </div>
-              <div>
-                <a href=""></a>
-                <a href=""></a>
-              </div>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 shadow-lg bg-gradient-to-r from-emerald-200 rounded-lg dark:bg-gradient-to-r from-teal-600">
               <Image
                 src={faultsinour}
                 className="rounded-lg object-cover"
@@ -222,16 +226,22 @@ export default function Home() {
                 create new social circles, that will improve you work and love
                 life.
               </p>
-              <div className="flex flex-row py-2 justify-center text-teal-600 dark:text-white">
-                <a href="https://starz-app.herokuapp.com/" className="mr-5">
+              <div className="flex flex-row py-2 justify-center">
+                <a
+                  href="https://starz-app.herokuapp.com/"
+                  className="mr-5 text-teal-600 dark:text-teal-300"
+                >
                   Project Link
                 </a>
-                <a href="https://github.com/BrianDLara/The-Faults-In-Our-Stars_Frontend">
+                <a
+                  href="https://github.com/BrianDLara/The-Faults-In-Our-Stars_Frontend"
+                  className="text-teal-600 dark:text-teal-300"
+                >
                   Github Link
                 </a>
               </div>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 shadow-lg bg-gradient-to-r from-emerald-200 rounded-lg dark:bg-gradient-to-r from-teal-600">
               <Image
                 src={pokepro}
                 className="rounded-lg object-cover"
@@ -249,14 +259,19 @@ export default function Home() {
                 see their pokemon team. Suggestions are given on how to beat
                 each pokemon based on that Pokemon's type.
               </p>
-              <div className="flex flex-row py-2 justify-center text-teal-600 dark:text-white">
+              <div className="flex flex-row py-2 justify-center">
                 <a
                   href="https://pokepro-frontend.herokuapp.com/"
-                  className="mr-5"
+                  className="mr-5 text-teal-600 dark:text-teal-300"
                 >
                   Project Link
                 </a>
-                <a href="https://github.com/sramalho94/PokePro">Github Link</a>
+                <a
+                  href="https://github.com/sramalho94/PokePro"
+                  className="text-teal-600 dark:text-teal-300"
+                >
+                  Github Link
+                </a>
               </div>
             </div>
           </div>
