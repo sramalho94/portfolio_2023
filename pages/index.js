@@ -2,7 +2,8 @@ import Head from 'next/head'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { GoMarkGithub } from 'react-icons/go'
-import { SiJavascript } from 'react-icons/si'
+import { SiJavascript, SiCss3, SiSequelize } from 'react-icons/si'
+import { IoLogoPython, IoLogoHtml5 } from 'react-icons/io'
 import Image from 'next/image'
 import pictureOfMe from '../public/pictureofme.jpg'
 import design from '../public/design.png'
@@ -84,19 +85,31 @@ export default function Home() {
             {/* <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               JavaScript, HTML, CSS, Python, C
             </p> */}
-            <div
-              className="flex flex-row px-2 mx-2
+            <ul
+              className="flex flex-row px-2 mx-5 py-5 justify-center shadow-2xl dark:text-white
             "
             >
-              <div className="flex flex-col text-center justify-center align-middle px-auto pr-5">
+              <li className="flex flex-col text-center justify-center align-middle px-auto pr-5">
                 <SiJavascript className="flex flex-row justify-center align-middle text-4xl text-center px-auto" />
                 <p>JavaScript</p>
-              </div>
-              <div className="flex flex-col text-center justify-center align-middle px-auto">
-                <SiJavascript className="flex flex-row justify-center align-middle text-4xl text-center px-auto" />
-                <p>JavaScript</p>
-              </div>
-            </div>
+              </li>
+              <li className="flex flex-col text-center justify-center align-middle px-auto pr-5">
+                <IoLogoPython className="flex flex-row justify-center align-middle text-4xl text-center px-auto" />
+                <p>Python</p>
+              </li>
+              <li className="flex flex-col text-center justify-center align-middle px-auto pr-5">
+                <IoLogoHtml5 className="flex flex-row justify-center align-middle text-4xl text-center px-auto" />
+                <p>Html5</p>
+              </li>
+              <li className="flex flex-col text-center justify-center align-middle px-auto pr-5">
+                <SiCss3 className="flex flex-row justify-center align-middle text-4xl text-center px-auto" />
+                <p>CSS3</p>
+              </li>
+              <li className="flex flex-col text-center justify-center align-middle px-auto pr-5">
+                <SiSequelize className="flex flex-row justify-center align-middle text-4xl text-center px-auto" />
+                <p>SQL</p>
+              </li>
+            </ul>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               I strive to constantly expand my knowledge base. This list will be
               frequently updated.
