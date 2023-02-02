@@ -2,8 +2,20 @@ import Head from 'next/head'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { GoMarkGithub } from 'react-icons/go'
-import { SiJavascript, SiCss3, SiSequelize } from 'react-icons/si'
-import { IoLogoPython, IoLogoHtml5 } from 'react-icons/io'
+import {
+  SiJavascript,
+  SiCss3,
+  SiSequelize,
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiExpress,
+  SiFlask,
+  SiPostgresql,
+  SiMongodb
+} from 'react-icons/si'
+import { IoLogoPython, IoLogoHtml5, IoLogoNodejs } from 'react-icons/io'
+import { RiVuejsFill } from 'react-icons/ri'
 import Image from 'next/image'
 import pictureOfMe from '../public/pictureofme.jpg'
 import design from '../public/design.png'
@@ -74,14 +86,15 @@ export default function Home() {
         </section>
         <section>
           <div className="text-center">
-            <h3 className="text-3xl py-1 dark:text-white">My Skills</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
+            {/* <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               Front End: React, Vue, Next, Tailwind
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               Back End: MongoDB, Sequelize, Express
-            </p>
-            <span className="text-teal-500">Coding Languages:</span>
+            </p> */}
+            <span className="text-teal-500 text-4xl font-bold">
+              Coding Languages:
+            </span>
             {/* <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               JavaScript, HTML, CSS, Python, C
             </p> */}
@@ -110,33 +123,49 @@ export default function Home() {
                 <p>SQL</p>
               </li>
             </ul>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
+            <p className="text-xl font-bold py-5 leading-8 text-gray-800 dark:text-white">
               I strive to constantly expand my knowledge base. This list will be
               frequently updated.
             </p>
           </div>
-
+          <h3 className="text-5xl font-bold py-1 dark:text-white text-center m-auto">
+            My Skills
+          </h3>
           <div className="lg:flex gap-20 mx-0">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gradient-to-r from-teal-600">
               <Image src={design} width={100} height={100} />
-              <h3 className="text-lg font-md pt-8 pb-2 dark:text-white">
+              <h3 className="text-3xl font-bold pt-8 pb-2 dark:text-white">
                 Responsive Frontend Projects
               </h3>
               <p className="py-2 dark:text-white">
                 Creating elegant designs suited for your website and business
                 needs.
               </p>
-              <h4 className="py-4 text-teal-600">
-                Development and Design Tools I use
+              <h4 className="py-4 font-bold text-xl text-teal-600">
+                Front-End Development Skills
               </h4>
-              <p className="text-gray-800 py-1 dark:text-white">PhotoShop</p>
-              <p className="text-gray-800 py-1 dark:text-white">Figma</p>
-              <p className="text-gray-800 py-1 dark:text-white">React</p>
-              <p className="text-gray-800 py-1 dark:text-white">Vue</p>
+              <ul className="flex flex-row justify-center dark:text-white">
+                <li className="flex flex-col mr-3">
+                  <SiReact className="flex flex-row justify-center align-middle text-4xl text-center " />
+                  <p>React.js</p>
+                </li>
+                <li className="flex flex-col mr-3">
+                  <RiVuejsFill className="flex flex-row justify-center align-middle text-4xl text-center " />
+                  <p>Vue.js</p>
+                </li>
+                <li className="flex flex-col mr-3">
+                  <SiNextdotjs className="flex flex-row justify-center align-middle text-4xl text-center " />
+                  <p>Next.js</p>
+                </li>
+                <li className="flex flex-col mr-3">
+                  <SiTailwindcss className="flex flex-row justify-center align-middle text-4xl text-center " />
+                  <p>Tailwind</p>
+                </li>
+              </ul>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gradient-to-l from-teal-600">
               <Image id="wrong" src={code} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2  dark:text-white">
+              <h3 className="text-3xl font-bold pt-8 pb-2 dark:text-white">
                 Intelligent Backend Design
               </h3>
               <p className="py-2 dark:text-white">
@@ -144,13 +173,31 @@ export default function Home() {
                 creating complex associations between entities that allow you to
                 easily access your business' data.
               </p>
-              <h4 className="py-4 text-teal-600 ">Backend Tools I Use</h4>
-              <p className="text-gray-800 py-1 dark:text-white">Sequelize</p>
-              <p className="text-gray-800 py-1 dark:text-white">
-                MongoDB/Mongoose
-              </p>
-              <p className="text-gray-800 py-1 dark:text-white">Postico</p>
-              <p className="text-gray-800 py-1 dark:text-white">Insomnia</p>
+              <h4 className="py-4 font-bold text-xl text-teal-600">
+                Back-end Development Skills
+              </h4>
+              <ul className="flex flex-row justify-center dark:text-white">
+                <li className="flex flex-col mr-3">
+                  <IoLogoNodejs className="flex flex-row justify-center align-middle text-4xl text-center " />
+                  <p>Node.js</p>
+                </li>
+                <li className="flex flex-col mr-3">
+                  <SiExpress className="flex flex-row justify-center align-middle text-4xl text-center " />
+                  <p>Express.js</p>
+                </li>
+                <li className="flex flex-col mr-3">
+                  <SiFlask className="flex flex-row justify-center align-middle text-4xl text-center " />
+                  <p>Flask</p>
+                </li>
+                <li className="flex flex-col mr-3">
+                  <SiPostgresql className="flex flex-row justify-center align-middle text-4xl text-center " />
+                  <p>PostgreSQL</p>
+                </li>
+                <li className="flex flex-col mr-3">
+                  <SiMongodb className="flex flex-row justify-center align-middle text-4xl text-center " />
+                  <p>MongoDB</p>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
