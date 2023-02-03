@@ -195,7 +195,7 @@ export default function Home() {
                 </li>
                 <li className="flex flex-col mr-3">
                   <SiMongodb className="flex flex-row justify-center align-middle text-4xl text-center " />
-                  <p>MongoDB</p>
+                  <p>PostgreSQL</p>
                 </li>
               </ul>
             </div>
@@ -211,7 +211,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 shadow-xl bg-gradient-to-tr from-emerald-200 rounded-lg">
               <Image
                 src={battleships}
                 className="rounded-lg object-cover"
@@ -241,7 +241,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 shadow-xl bg-gradient-to-tr from-emerald-200 rounded-lg">
               <Image
                 src={cornhub}
                 className="rounded-lg object-cover"
@@ -275,7 +275,7 @@ export default function Home() {
                 <a href=""></a>
               </div>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 shadow-xl bg-gradient-to-tr from-emerald-200 rounded-lg">
               <Image
                 src={faultsinour}
                 className="rounded-lg object-cover"
@@ -305,7 +305,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 shadow-xl bg-gradient-to-tr from-emerald-200 rounded-lg">
               <Image
                 src={pokepro}
                 className="rounded-lg object-cover"
