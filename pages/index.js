@@ -23,6 +23,7 @@ import code from '../public/code.png'
 import battleships from '../public/battleships.png'
 import cornhub from '../public/cornhub.png'
 import faultsinour from '../public/faultsinourstars.png'
+import faults2 from '../public/faults2.png'
 import pokepro from '../public/PokePro.png'
 import { useState } from 'react'
 
@@ -53,7 +54,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href=""
+                  href="https://docs.google.com/document/d/142lWER44BbPiJk_PRyqOpccsorRWrZdhqd8rtPCMcNE/export?format=pdf"
                 >
                   Resume
                 </a>
@@ -217,7 +218,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1 shadow-xl bg-gradient-to-tr from-emerald-200 rounded-lg">
               <Image
                 src={battleships}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover w-10 h-10"
                 width={'100%'}
                 height={'100%'}
                 layout="responsive"
@@ -247,7 +248,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1 shadow-xl bg-gradient-to-tr from-emerald-200 rounded-lg">
               <Image
                 src={cornhub}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover w-10 h-10"
                 width={'100%'}
                 height={'100%'}
                 layout="responsive"
@@ -276,8 +277,8 @@ export default function Home() {
             </div>
             <div className="basis-1/3 flex-1 shadow-xl bg-gradient-to-tr from-emerald-200 rounded-lg">
               <Image
-                src={faultsinour}
-                className="rounded-lg object-cover"
+                src={faults2}
+                className="rounded-lg  w-10 h-1"
                 width={'100%'}
                 height={'100%'}
                 layout="responsive"
