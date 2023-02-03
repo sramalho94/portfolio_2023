@@ -206,7 +206,7 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white text-center">
+            <h3 className="text-5xl font-bold py-1 dark:text-white text-center m-auto">
               Portfolio
             </h3>
             <p className="py-2 text-center dark:text-white">
