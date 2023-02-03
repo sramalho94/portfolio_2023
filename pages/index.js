@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
-import { AiFillLinkedin } from 'react-icons/ai'
+import { AiFillLinkedin, AiOutlineMail } from 'react-icons/ai'
 import { GoMarkGithub } from 'react-icons/go'
 import {
   SiJavascript,
@@ -78,6 +78,9 @@ export default function Home() {
             </a>
             <a href="https://github.com/sramalho94">
               <GoMarkGithub />
+            </a>
+            <a href="mailto:sramalho@fordham.edu">
+              <AiOutlineMail />
             </a>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
@@ -332,8 +335,8 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="flex flex-row justify-center bg-transparent bg-emerald-200 w-screen">
-        <ul className="flex flex-row text-center justify-center">
+      <footer className="flex flex-row justify-center bg-transparent bg-emerald-200 w-screen ">
+        <ul className="flex flex-row text-center justify-center ">
           <li className="flex flex-row align-middle justify-center">
             <GoMarkGithub />
             <a href="https://github.com/sramalho94">Github Repo</a>
