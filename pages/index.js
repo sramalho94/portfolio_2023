@@ -103,7 +103,7 @@ export default function Home() {
               JavaScript, HTML, CSS, Python, C
             </p> */}
             <ul
-              className="flex flex-wrap  md:flex-row sm:w-screen  md:w-auto px-2 mx-5 py-5 align-middle justify-center shadow-2xl dark:text-white
+              className="flex flex-wrap  md:flex-row sm:w-screen  md:w-auto px-2 mx-5 py-5 align-middle rounded-lg justify-center shadow-2xl dark:text-white
             "
             >
               <li className="flex flex-col text-center justify-center align-middle px-auto pr-5">
@@ -339,8 +339,10 @@ export default function Home() {
       <footer className="flex flex-row justify-center bg-transparent bg-emerald-200 w-screen ">
         <ul className="flex flex-row text-center justify-center ">
           <li className="flex flex-row align-middle justify-center">
-            <GoMarkGithub />
-            <a href="https://github.com/sramalho94">Github Repo</a>
+            <GoMarkGithub className="font-bold" />
+            <a href="https://github.com/sramalho94" className="font-bold">
+              Github Repo
+            </a>
           </li>
           <li className="flex flex-row pl-4">
             <p>Built Using: Next.js, Tailwindcss</p>
