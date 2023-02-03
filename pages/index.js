@@ -84,7 +84,7 @@ export default function Home() {
               <AiOutlineMail />
             </a>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96  md:w-96">
             <Image src={pictureOfMe} fill={true} objectFit="cover" />
           </div>
         </section>
@@ -223,7 +223,7 @@ export default function Home() {
                 height={'100%'}
                 layout="responsive"
               />
-              <p className="text-lg font-medium pt-8 pb-2 text-center  dark:text-white">
+              <p className="text-xl font-bold pt-8 pb-2 text-center  dark:text-white">
                 Admiral Stephan's BattleShips
               </p>
               <p className="py-2 text-center dark:text-white">
@@ -236,11 +236,14 @@ export default function Home() {
               <div className="flex flex-row py-2 justify-center text-teal-600 dark:text-white">
                 <a
                   href="https://admiralstephanbattleship.surge.sh/"
-                  className="mr-5"
+                  className="mr-5 font-bold text-xl"
                 >
                   Project Link
                 </a>
-                <a href="https://github.com/sramalho94/Admiral-Stephan-Battleship-Project">
+                <a
+                  href="https://github.com/sramalho94/Admiral-Stephan-Battleship-Project"
+                  className="mr-5 font-bold text-xl"
+                >
                   Github Link
                 </a>
               </div>
@@ -253,7 +256,7 @@ export default function Home() {
                 height={'100%'}
                 layout="responsive"
               />
-              <p className="text-lg font-medium pt-8 pb-2 text-center  dark:text-white">
+              <p className="text-xl font-bold pt-8 pb-2 text-center  dark:text-white">
                 Corney Island
               </p>
               <p className="py-2 text-center dark:text-white">
@@ -266,11 +269,14 @@ export default function Home() {
               <div className="flex flex-row py-2 justify-center text-teal-600 dark:text-white">
                 <a
                   href="https://corney-island2022.herokuapp.com/"
-                  className="mr-5"
+                  className="mr-5 font-bold text-xl"
                 >
                   Project Link
                 </a>
-                <a href="https://github.com/sramalho94/Corney_Island_Group_Project">
+                <a
+                  href="https://github.com/sramalho94/Corney_Island_Group_Project"
+                  className="mr-5 font-bold text-xl"
+                >
                   Github Link
                 </a>
               </div>
@@ -283,7 +289,7 @@ export default function Home() {
                 height={'100%'}
                 layout="responsive"
               />
-              <p className="text-lg font-medium pt-8 pb-2  dark:text-white text-center">
+              <p className="text-xl font-bold pt-8 pb-2 text-center  dark:text-white">
                 The Faults In Our Stars
               </p>
               <p className="py-2 text-center dark:text-white">
@@ -297,10 +303,16 @@ export default function Home() {
                 life.
               </p>
               <div className="flex flex-row py-2 justify-center text-teal-600 dark:text-white">
-                <a href="https://starz-app.herokuapp.com/" className="mr-5">
+                <a
+                  href="https://starz-app.herokuapp.com/"
+                  className="mr-5 font-bold text-xl"
+                >
                   Project Link
                 </a>
-                <a href="https://github.com/BrianDLara/The-Faults-In-Our-Stars_Frontend">
+                <a
+                  href="https://github.com/BrianDLara/The-Faults-In-Our-Stars_Frontend"
+                  className="mr-5 font-bold text-xl"
+                >
                   Github Link
                 </a>
               </div>
@@ -313,7 +325,7 @@ export default function Home() {
                 height={'100%'}
                 layout="responsive"
               />
-              <p className="text-lg font-medium pt-8 pb-2 text-center  dark:text-white">
+              <p className="text-xl font-bold pt-8 pb-2 text-center  dark:text-white">
                 PokePro
               </p>
               <p className="py-2 text-center dark:text-white">
@@ -326,11 +338,16 @@ export default function Home() {
               <div className="flex flex-row py-2 justify-center text-teal-600 dark:text-white">
                 <a
                   href="https://pokepro-frontend.herokuapp.com/"
-                  className="mr-5"
+                  className="mr-5 font-bold text-xl"
                 >
                   Project Link
                 </a>
-                <a href="https://github.com/sramalho94/PokePro">Github Link</a>
+                <a
+                  href="https://github.com/sramalho94/PokePro"
+                  className="mr-5 font-bold text-xl"
+                >
+                  Github Link
+                </a>
               </div>
             </div>
           </div>
