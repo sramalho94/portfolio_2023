@@ -103,7 +103,7 @@ export default function Home() {
               JavaScript, HTML, CSS, Python, C
             </p> */}
             <ul
-              className="flex flex-row px-2 mx-5 py-5 justify-center shadow-2xl dark:text-white
+              className="flex flex-wrap  md:flex-row sm:w-screen  md:w-auto px-2 mx-5 py-5 align-middle justify-center shadow-2xl dark:text-white
             "
             >
               <li className="flex flex-col text-center justify-center align-middle px-auto pr-5">
