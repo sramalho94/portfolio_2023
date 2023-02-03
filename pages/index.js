@@ -176,7 +176,7 @@ export default function Home() {
               <h4 className="py-4 font-bold text-xl text-teal-600">
                 Back-end Development Skills
               </h4>
-              <ul className="flex flex-row justify-center dark:text-white">
+              <ul className="grid grid-cols-2 md:flex md:flex-row justify-center dark:text-white ">
                 <li className="flex flex-col mr-3">
                   <IoLogoNodejs className="flex flex-row justify-center align-middle text-4xl text-center " />
                   <p>Node.js</p>
@@ -269,10 +269,6 @@ export default function Home() {
                 <a href="https://github.com/sramalho94/Corney_Island_Group_Project">
                   Github Link
                 </a>
-              </div>
-              <div>
-                <a href=""></a>
-                <a href=""></a>
               </div>
             </div>
             <div className="basis-1/3 flex-1 shadow-xl bg-gradient-to-tr from-emerald-200 rounded-lg">
