@@ -336,6 +336,17 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <footer className="flex flex-row justify-center bg-transparent bg-emerald-200 w-screen">
+        <ul className="flex flex-row text-center justify-center">
+          <li className="flex flex-row align-middle justify-center">
+            <GoMarkGithub />
+            <a href="https://github.com/sramalho94">Github Repo</a>
+          </li>
+          <li className="flex flex-row pl-4">
+            <p>Built Using: Next.js, Tailwindcss</p>
+          </li>
+        </ul>
+      </footer>
     </div>
   )
 }
