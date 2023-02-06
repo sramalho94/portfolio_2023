@@ -149,20 +149,20 @@ export default function Home() {
                 Front-End Development Skills
               </h4>
               <ul className="flex flex-row justify-center dark:text-white">
-                <li className="flex flex-col mr-3">
-                  <SiReact className="flex flex-row justify-center align-middle text-4xl text-center " />
+                <li className="flex flex-col justify-center px-3">
+                  <SiReact className="text-4xl text-center mx-auto" />
                   <p>React.js</p>
                 </li>
-                <li className="flex flex-col mr-3">
-                  <RiVuejsFill className="flex flex-row justify-center align-middle text-4xl text-center " />
+                <li className="flex flex-col justify-center px-3">
+                  <RiVuejsFill className="text-4xl text-center mx-auto" />
                   <p>Vue.js</p>
                 </li>
-                <li className="flex flex-col mr-3">
-                  <SiNextdotjs className="flex flex-row justify-center align-middle text-4xl text-center " />
+                <li className="flex flex-col justify-center px-3">
+                  <SiNextdotjs className="text-4xl text-center mx-auto" />
                   <p>Next.js</p>
                 </li>
-                <li className="flex flex-col mr-3">
-                  <SiTailwindcss className="flex flex-row justify-center align-middle text-4xl text-center " />
+                <li className="flex flex-col justify-center px-3">
+                  <SiTailwindcss className="text-4xl text-center mx-auto" />
                   <p>Tailwind</p>
                 </li>
               </ul>
@@ -181,24 +181,24 @@ export default function Home() {
                 Back-end Development Skills
               </h4>
               <ul className="grid grid-cols-2 md:flex md:flex-row justify-center dark:text-white ">
-                <li className="flex flex-col mr-3">
-                  <IoLogoNodejs className="flex flex-row justify-center align-middle text-4xl text-center " />
+                <li className="flex flex-col justify-center px-3">
+                  <IoLogoNodejs className="text-4xl text-center mx-auto" />
                   <p>Node.js</p>
                 </li>
-                <li className="flex flex-col mr-3">
-                  <SiExpress className="flex flex-row justify-center align-middle text-4xl text-center " />
+                <li className="flex flex-col justify-center px-3">
+                  <SiExpress className="text-4xl text-center mx-auto" />
                   <p>Express.js</p>
                 </li>
-                <li className="flex flex-col mr-3">
-                  <SiFlask className="flex flex-row justify-center align-middle text-4xl text-center " />
+                <li className="flex flex-col justify-center px-3">
+                  <SiFlask className="text-4xl text-center mx-auto" />
                   <p>Flask</p>
                 </li>
-                <li className="flex flex-col mr-3">
-                  <SiPostgresql className="flex flex-row justify-center align-middle text-4xl text-center " />
+                <li className="flex flex-col justify-center px-3">
+                  <SiPostgresql className="text-4xl text-center mx-auto" />
                   <p>PostgreSQL</p>
                 </li>
-                <li className="flex flex-col mr-3">
-                  <SiMongodb className="flex flex-row justify-center align-middle text-4xl text-center " />
+                <li className="flex flex-col justify-center px-3">
+                  <SiMongodb className="text-4xl text-center mx-auto" />
                   <p>PostgreSQL</p>
                 </li>
               </ul>
