@@ -69,7 +69,7 @@ export default function Home() {
               Web Developer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl mx-auto max-w-md dark:text-white">
-              A software engineer who prizes collaboration, meeting goals, and
+              A software engineer who loves collaboration, meeting goals, and
               always learning new things. Let's learn together!
             </p>
           </div>
@@ -139,7 +139,7 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gradient-to-r from-teal-600">
               <Image src={design} width={100} height={100} />
               <h3 className="text-3xl font-bold pt-8 pb-2 dark:text-white">
-                Responsive Frontend Projects
+                Responsive Front-end Projects
               </h3>
               <p className="py-2 dark:text-white">
                 Creating elegant designs suited for your website and business
@@ -170,7 +170,7 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gradient-to-l from-teal-600">
               <Image id="wrong" src={code} width={100} height={100} />
               <h3 className="text-3xl font-bold pt-8 pb-2 dark:text-white">
-                Intelligent Backend Design
+                Intelligent Back-end Design
               </h3>
               <p className="py-2 dark:text-white">
                 Whether it be SQL or nonSQL databases, I have experience
