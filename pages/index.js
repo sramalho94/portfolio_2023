@@ -90,51 +90,38 @@ export default function Home() {
         </section>
         <section>
           <div className="text-center">
-            {/* <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              Front End: React, Vue, Next, Tailwind
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              Back End: MongoDB, Sequelize, Express
-            </p> */}
-            <span className="text-teal-500 text-4xl font-bold">
-              Coding Languages:
-            </span>
-            {/* <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              JavaScript, HTML, CSS, Python, C
-            </p> */}
-            <ul
-              className="flex flex-wrap  md:flex-row sm:w-screen  md:w-auto px-2 mx-5 py-5 align-middle rounded-lg justify-center shadow-2xl dark:text-white
-            "
-            >
-              <li className="flex flex-col justify-center px-3">
-                <SiJavascript className="text-4xl text-center mx-auto" />
-                <p>JavaScript</p>
-              </li>
-              <li className="flex flex-col justify-center px-3">
-                <IoLogoPython className="text-4xl text-center mx-auto" />
-                <p>Python</p>
-              </li>
-              <li className="flex flex-col justify-center px-3">
-                <IoLogoHtml5 className="text-4xl text-center mx-auto" />
-                <p>Html5</p>
-              </li>
-              <li className="flex flex-col justify-center px-3">
-                <SiCss3 className="text-4xl text-center mx-auto" />
-                <p>CSS3</p>
-              </li>
-              <li className="flex flex-col justify-center px-3">
-                <SiSequelize className="text-4xl text-center mx-auto" />
-                <p>SQL</p>
-              </li>
-            </ul>
+            <span className="text-teal-500 text-5xl font-bold">My Skills</span>
+
             <p className="text-xl font-bold py-5 leading-8 text-gray-800 dark:text-white">
               I strive to constantly expand my knowledge base. This list will be
               frequently updated.
             </p>
           </div>
-          <h3 className="text-5xl font-bold py-1 dark:text-white text-center m-auto">
-            My Skills
-          </h3>
+          <ul
+            className="flex flex-wrap  md:flex-row sm:w-screen  md:w-auto px-2 mx-5 py-5 align-middle rounded-lg justify-center shadow-2xl dark:text-white
+            "
+          >
+            <li className="flex flex-col justify-center px-3">
+              <SiJavascript className="text-4xl text-center mx-auto" />
+              <p>JavaScript</p>
+            </li>
+            <li className="flex flex-col justify-center px-3">
+              <IoLogoPython className="text-4xl text-center mx-auto" />
+              <p>Python</p>
+            </li>
+            <li className="flex flex-col justify-center px-3">
+              <IoLogoHtml5 className="text-4xl text-center mx-auto" />
+              <p>Html5</p>
+            </li>
+            <li className="flex flex-col justify-center px-3">
+              <SiCss3 className="text-4xl text-center mx-auto" />
+              <p>CSS3</p>
+            </li>
+            <li className="flex flex-col justify-center px-3">
+              <SiSequelize className="text-4xl text-center mx-auto" />
+              <p>SQL</p>
+            </li>
+          </ul>
           <div className="lg:flex gap-20 mx-0">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gradient-to-r from-teal-600">
               <Image src={design} width={100} height={100} />
