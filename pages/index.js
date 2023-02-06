@@ -124,7 +124,12 @@ export default function Home() {
           </ul>
           <div className="lg:flex gap-20 mx-0">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gradient-to-r from-teal-600">
-              <Image src={design} width={100} height={100} />
+              <Image
+                src={design}
+                width={100}
+                height={100}
+                className="mx-auto"
+              />
               <h3 className="text-3xl font-bold pt-8 pb-2 dark:text-white">
                 Responsive Front-end Projects
               </h3>
@@ -155,7 +160,13 @@ export default function Home() {
               </ul>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gradient-to-l from-teal-600">
-              <Image id="wrong" src={code} width={100} height={100} />
+              <Image
+                id="wrong"
+                src={code}
+                width={100}
+                height={100}
+                className="mx-auto"
+              />
               <h3 className="text-3xl font-bold pt-8 pb-2 dark:text-white">
                 Intelligent Back-end Design
               </h3>
@@ -343,7 +354,7 @@ export default function Home() {
       <footer className="flex flex-row justify-center bg-transparent bg-emerald-200 w-screen ">
         <ul className="flex flex-row text-center justify-center ">
           <li className="flex flex-row align-middle justify-center">
-            <GoMarkGithub className="font-bold" />
+            <GoMarkGithub className="font-bold my-auto" />
             <a href="https://github.com/sramalho94" className="font-bold">
               Github Repo
             </a>
