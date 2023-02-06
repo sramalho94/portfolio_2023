@@ -106,24 +106,24 @@ export default function Home() {
               className="flex flex-wrap  md:flex-row sm:w-screen  md:w-auto px-2 mx-5 py-5 align-middle rounded-lg justify-center shadow-2xl dark:text-white
             "
             >
-              <li className="flex flex-col text-center justify-center align-middle px-auto pr-5">
-                <SiJavascript className="flex flex-row justify-center align-middle text-4xl text-center px-auto" />
+              <li className="flex flex-col justify-center px-3">
+                <SiJavascript className="text-4xl text-center mx-auto" />
                 <p>JavaScript</p>
               </li>
-              <li className="flex flex-col text-center justify-center align-middle px-auto pr-5">
-                <IoLogoPython className="flex flex-row justify-center align-middle text-4xl text-center px-auto" />
+              <li className="flex flex-col justify-center px-3">
+                <IoLogoPython className="text-4xl text-center mx-auto" />
                 <p>Python</p>
               </li>
-              <li className="flex flex-col text-center justify-center align-middle px-auto pr-5">
-                <IoLogoHtml5 className="flex flex-row justify-center align-middle text-4xl text-center px-auto" />
+              <li className="flex flex-col justify-center px-3">
+                <IoLogoHtml5 className="text-4xl text-center mx-auto" />
                 <p>Html5</p>
               </li>
-              <li className="flex flex-col text-center justify-center align-middle px-auto pr-5">
-                <SiCss3 className="flex flex-row justify-center align-middle text-4xl text-center px-auto" />
+              <li className="flex flex-col justify-center px-3">
+                <SiCss3 className="text-4xl text-center mx-auto" />
                 <p>CSS3</p>
               </li>
-              <li className="flex flex-col text-center justify-center align-middle px-auto pr-5">
-                <SiSequelize className="flex flex-row justify-center align-middle text-4xl text-center px-auto" />
+              <li className="flex flex-col justify-center px-3">
+                <SiSequelize className="text-4xl text-center mx-auto" />
                 <p>SQL</p>
               </li>
             </ul>
