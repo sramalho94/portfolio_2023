@@ -38,7 +38,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
       </Head>
-      <main className="bg-teal-100 px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+      <main className="bg-purple-200 px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="mb-20">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons dark:text-white">
@@ -53,7 +53,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 to-purple-500 text-white px-4 py-2 rounded-md ml-8"
                   href="https://docs.google.com/document/d/142lWER44BbPiJk_PRyqOpccsorRWrZdhqd8rtPCMcNE/export?format=pdf"
                 >
                   Resume
@@ -62,7 +62,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
+            <h2 className="text-5xl py-2 text-purple-600 font-medium md:text-6xl">
               Stephan D. Ramalho
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
@@ -90,7 +90,9 @@ export default function Home() {
         </section>
         <section>
           <div className="text-center">
-            <span className="text-teal-500 text-5xl font-bold">My Skills</span>
+            <span className="text-purple-500 text-5xl font-bold">
+              My Skills
+            </span>
 
             <p className="text-xl font-bold py-5 leading-8 text-gray-800 dark:text-white">
               I strive to constantly expand my knowledge base. This list will be
@@ -137,7 +139,7 @@ export default function Home() {
                 Creating elegant designs suited for your website and business
                 needs.
               </p>
-              <h4 className="py-4 font-bold text-xl text-teal-600">
+              <h4 className="py-4 font-bold text-xl text-purple-600">
                 Front-End Development Skills
               </h4>
               <ul className="flex flex-row justify-center dark:text-white">
@@ -175,7 +177,7 @@ export default function Home() {
                 creating complex associations between entities that allow you to
                 easily access your business' data.
               </p>
-              <h4 className="py-4 font-bold text-xl text-teal-600">
+              <h4 className="py-4 font-bold text-xl text-purple-600">
                 Back-end Development Skills
               </h4>
               <ul className="grid grid-cols-2 md:flex md:flex-row justify-center dark:text-white ">
@@ -205,7 +207,7 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-5xl font-bold py-1 dark:text-white text-center m-auto">
+            <h3 className="text-5xl font-bold py-1 dark:text-white text-center m-auto text-purple-500">
               Portfolio
             </h3>
             <p className="py-2 text-center dark:text-white">
@@ -231,7 +233,7 @@ export default function Home() {
                 AI. When either the player or the AI runs out of ships, the game
                 is over.
               </p>
-              <div className="flex flex-row py-2 justify-center text-teal-600 dark:text-white">
+              <div className="flex flex-row py-2 justify-center text-purple-600 dark:text-white">
                 <a
                   href="https://admiralstephanbattleship.surge.sh/"
                   className="mr-5 font-bold text-xl"
@@ -264,7 +266,7 @@ export default function Home() {
                 user also has the capability to add and delete attractions as
                 well.
               </p>
-              <div className="flex flex-row py-2 justify-center text-teal-600 dark:text-white">
+              <div className="flex flex-row py-2 justify-center text-purple-600 dark:text-white">
                 <a
                   href="https://corney-island2022.herokuapp.com/"
                   className="mr-5 font-bold text-xl"
@@ -300,7 +302,7 @@ export default function Home() {
                 create new social circles, that will improve you work and love
                 life.
               </p>
-              <div className="flex flex-row py-2 justify-center text-teal-600 dark:text-white">
+              <div className="flex flex-row py-2 justify-center text-purple-600 dark:text-white">
                 <a
                   href="https://starz-app.herokuapp.com/"
                   className="mr-5 font-bold text-xl"
@@ -333,7 +335,7 @@ export default function Home() {
                 see their pokemon team. Suggestions are given on how to beat
                 each pokemon based on that Pokemon's type.
               </p>
-              <div className="flex flex-row py-2 justify-center text-teal-600 dark:text-white">
+              <div className="flex flex-row py-2 justify-center text-purple-600 dark:text-white">
                 <a
                   href="https://pokepro-frontend.herokuapp.com/"
                   className="mr-5 font-bold text-xl"
@@ -353,7 +355,7 @@ export default function Home() {
       </main>
       <footer className="flex flex-row justify-center bg-transparent bg-emerald-200 w-screen ">
         <ul className="flex flex-row text-center justify-center ">
-          <li className="flex flex-row align-middle justify-center">
+          <li className="flex flex-row align-middle justify-center text-purple-600">
             <GoMarkGithub className="font-bold my-auto" />
             <a href="https://github.com/sramalho94" className="font-bold">
               Github Repo
