@@ -412,7 +412,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="flex flex-row justify-center bg-transparent bg-emerald-200 w-screen ">
+      <footer className="flex flex-row justify-center  bg-emerald-200 w-screen ">
         <ul className="flex flex-row text-center justify-center ">
           <li className="flex flex-row align-middle justify-center text-purple-600">
             <GoMarkGithub className="font-bold my-auto" />
