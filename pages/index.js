@@ -306,6 +306,17 @@ export default function Home() {
                   Github Link
                 </a>
               </div>
+              <ul className="flex flex-row justify-center dark:text-white">
+                <li>
+                  <SiJavascript className="text-4xl text-center mx-auto pr-3" />
+                </li>
+                <li>
+                  <SiCss3 className="text-4xl text-center mx-auto pr-3" />
+                </li>
+                <li>
+                  <IoLogoHtml5 className="text-4xl text-center mx-auto pr-3" />
+                </li>
+              </ul>
             </div>
             <div className="basis-1/3 flex-1 shadow-xl bg-gradient-to-tr from-emerald-200 rounded-lg">
               <Image
@@ -339,6 +350,26 @@ export default function Home() {
                   Github Link
                 </a>
               </div>
+              <ul className="flex flex-row justify-center dark:text-white">
+                <li>
+                  <SiJavascript className="text-4xl text-center mx-auto pr-3" />
+                </li>
+                <li>
+                  <SiCss3 className="text-4xl text-center mx-auto pr-3" />
+                </li>
+                <li>
+                  <SiMongodb className="text-4xl text-center mx-auto pr-3" />
+                </li>
+                <li>
+                  <SiExpress className="text-4xl text-center mx-auto pr-3" />
+                </li>
+                <li>
+                  <SiReact className="text-4xl text-center mx-auto pr-3" />
+                </li>
+                <li>
+                  <IoLogoNodejs className="text-4xl text-center mx-auto pr-3" />
+                </li>
+              </ul>
             </div>
             <div className="basis-1/3 flex-1 shadow-xl bg-gradient-to-tr from-emerald-200 rounded-lg">
               <Image
@@ -375,6 +406,28 @@ export default function Home() {
                   Github Link
                 </a>
               </div>
+              <div>
+                <ul className="flex flex-row justify-center dark:text-white">
+                  <li>
+                    <SiJavascript className="text-4xl text-center mx-auto pr-3" />
+                  </li>
+                  <li>
+                    <SiCss3 className="text-4xl text-center mx-auto pr-3" />
+                  </li>
+                  <li>
+                    <SiPostgresql className="text-4xl text-center mx-auto pr-3" />
+                  </li>
+                  <li>
+                    <SiExpress className="text-4xl text-center mx-auto pr-3" />
+                  </li>
+                  <li>
+                    <SiReact className="text-4xl text-center mx-auto pr-3" />
+                  </li>
+                  <li>
+                    <IoLogoNodejs className="text-4xl text-center mx-auto pr-3" />
+                  </li>
+                </ul>
+              </div>
             </div>
             <div className="basis-1/3 flex-1 shadow-xl bg-gradient-to-tr from-emerald-200 rounded-lg">
               <Image
@@ -407,6 +460,28 @@ export default function Home() {
                 >
                   Github Link
                 </a>
+              </div>
+              <div>
+                <ul className="flex flex-row justify-center dark:text-white">
+                  <li>
+                    <SiJavascript className="text-4xl text-center mx-auto pr-3" />
+                  </li>
+                  <li>
+                    <SiCss3 className="text-4xl text-center mx-auto pr-3" />
+                  </li>
+                  <li>
+                    <SiPostgresql className="text-4xl text-center mx-auto pr-3" />
+                  </li>
+                  <li>
+                    <SiExpress className="text-4xl text-center mx-auto pr-3" />
+                  </li>
+                  <li>
+                    <SiReact className="text-4xl text-center mx-auto pr-3" />
+                  </li>
+                  <li>
+                    <IoLogoNodejs className="text-4xl text-center mx-auto pr-3" />
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
