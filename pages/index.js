@@ -25,10 +25,38 @@ import cornhub from '../public/cornhub.png'
 import faultsinour from '../public/faultsinourstars.png'
 import faults2 from '../public/faults2.png'
 import pokepro from '../public/PokePro.png'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
+
+  const targetRef1 = useRef(null)
+  const targetRef2 = useRef(null)
+  const targetRef3 = useRef(null)
+
+  const handleClick1 = (event) => {
+    event.preventDefault()
+    window.scrollTo({
+      top: targetRef1.current.offsetTop - 40,
+      behavior: 'smooth'
+    })
+  }
+
+  const handleClick2 = (event) => {
+    event.preventDefault()
+    window.scrollTo({
+      top: targetRef2.current.offsetTop - 40,
+      behavior: 'smooth'
+    })
+  }
+
+  const handleClick3 = (event) => {
+    event.preventDefault()
+    window.scrollTo({
+      top: targetRef3.current.offsetTop - 40,
+      behavior: 'smooth'
+    })
+  }
 
   return (
     <div className={darkMode ? 'dark' : ''}>
@@ -39,7 +67,38 @@ export default function Home() {
         <link rel="icon" href="/logo.png" />
       </Head>
       <main className="bg-purple-200 px-10 md:px-20 lg:px-40 dark:bg-gray-900">
-        <section className="mb-20">
+        <header className=" flex flex-row justify-center mx-auto bg-emerald-200 fixed top-0 inset-x-0 z-50">
+          <ul className="flex flex-row">
+            <li>
+              <a
+                href="#"
+                className="mr-10 font-bold text-purple-500"
+                onClick={handleClick1}
+              >
+                About Me
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="mr-10 font-bold text-purple-500"
+                onClick={handleClick2}
+              >
+                My Skills
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="mr-10 font-bold text-purple-500"
+                onClick={handleClick3}
+              >
+                Portfolio
+              </a>
+            </li>
+          </ul>
+        </header>
+        <section className="mb-20 ">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons dark:text-white">
               sramalho@fordham.edu
@@ -61,7 +120,7 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10">
+          <div className="text-center p-10" ref={targetRef1}>
             <h2 className="text-5xl py-2 text-purple-600 font-medium md:text-6xl">
               Stephan D. Ramalho
             </h2>
@@ -88,7 +147,7 @@ export default function Home() {
             <Image src={pictureOfMe} fill={true} objectFit="cover" />
           </div>
         </section>
-        <section>
+        <section ref={targetRef2}>
           <div className="text-center">
             <span className="text-purple-500 text-5xl font-bold">
               My Skills
@@ -205,7 +264,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section>
+        <section ref={targetRef3}>
           <div>
             <h3 className="text-5xl font-bold py-1 dark:text-white text-center m-auto text-purple-500">
               Portfolio
