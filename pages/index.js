@@ -34,7 +34,7 @@ export default function Home() {
   const targetRef2 = useRef(null)
   const targetRef3 = useRef(null)
 
-  const handleClick1 = (event) => {
+  const handleClickAboutMe = (event) => {
     event.preventDefault()
     window.scrollTo({
       top: targetRef1.current.offsetTop - 40,
@@ -42,7 +42,7 @@ export default function Home() {
     })
   }
 
-  const handleClick2 = (event) => {
+  const handleClickMySkills = (event) => {
     event.preventDefault()
     window.scrollTo({
       top: targetRef2.current.offsetTop - 40,
@@ -50,7 +50,7 @@ export default function Home() {
     })
   }
 
-  const handleClick3 = (event) => {
+  const handleClickPortfolio = (event) => {
     event.preventDefault()
     window.scrollTo({
       top: targetRef3.current.offsetTop - 40,
@@ -73,7 +73,7 @@ export default function Home() {
               <a
                 href="#"
                 className="mr-10 font-bold text-purple-500"
-                onClick={handleClick1}
+                onClick={handleClickAboutMe}
               >
                 About Me
               </a>
@@ -82,7 +82,7 @@ export default function Home() {
               <a
                 href="#"
                 className="mr-10 font-bold text-purple-500"
-                onClick={handleClick2}
+                onClick={handleClickMySkills}
               >
                 My Skills
               </a>
@@ -91,7 +91,7 @@ export default function Home() {
               <a
                 href="#"
                 className="mr-10 font-bold text-purple-500"
-                onClick={handleClick3}
+                onClick={handleClickPortfolio}
               >
                 Portfolio
               </a>
@@ -133,13 +133,22 @@ export default function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
-            <a href="http://www.linkedin.com/in/stephan-ramalho">
+            <a
+              href="http://www.linkedin.com/in/stephan-ramalho"
+              className="hover:scale-150 transition-all duration-300"
+            >
               <AiFillLinkedin />
             </a>
-            <a href="https://github.com/sramalho94">
+            <a
+              href="https://github.com/sramalho94"
+              className="hover:scale-150 transition-all duration-300"
+            >
               <GoMarkGithub />
             </a>
-            <a href="mailto:sramalho@fordham.edu">
+            <a
+              href="mailto:sramalho@fordham.edu"
+              className="hover:scale-150 transition-all duration-300"
+            >
               <AiOutlineMail />
             </a>
           </div>
