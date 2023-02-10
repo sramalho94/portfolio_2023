@@ -304,13 +304,13 @@ export default function Home() {
               <div className="flex flex-row py-2 justify-center text-purple-600 dark:text-white">
                 <a
                   href="https://admiralstephanbattleship.surge.sh/"
-                  className="mr-5 font-bold text-xl"
+                  className="mr-5 font-bold text-xl hover:scale-125 transition-all duration-300"
                 >
                   Project Link
                 </a>
                 <a
                   href="https://github.com/sramalho94/Admiral-Stephan-Battleship-Project"
-                  className="mr-5 font-bold text-xl"
+                  className="mr-5 font-bold text-xl hover:scale-125 transition-all duration-300"
                 >
                   Github Link
                 </a>
@@ -348,13 +348,13 @@ export default function Home() {
               <div className="flex flex-row py-2 justify-center text-purple-600 dark:text-white">
                 <a
                   href="https://corney-island2022.herokuapp.com/"
-                  className="mr-5 font-bold text-xl"
+                  className="mr-5 font-bold text-xl hover:scale-125 transition-all duration-300"
                 >
                   Project Link
                 </a>
                 <a
                   href="https://github.com/sramalho94/Corney_Island_Group_Project"
-                  className="mr-5 font-bold text-xl"
+                  className="mr-5 font-bold text-xl hover:scale-125 transition-all duration-300"
                 >
                   Github Link
                 </a>
@@ -404,13 +404,13 @@ export default function Home() {
               <div className="flex flex-row py-2 justify-center text-purple-600 dark:text-white">
                 <a
                   href="https://starz-app.herokuapp.com/"
-                  className="mr-5 font-bold text-xl"
+                  className="mr-5 font-bold text-xl hover:scale-125 transition-all duration-300"
                 >
                   Project Link
                 </a>
                 <a
                   href="https://github.com/BrianDLara/The-Faults-In-Our-Stars_Frontend"
-                  className="mr-5 font-bold text-xl"
+                  className="mr-5 font-bold text-xl hover:scale-125 transition-all duration-300"
                 >
                   Github Link
                 </a>
@@ -459,13 +459,13 @@ export default function Home() {
               <div className="flex flex-row py-2 justify-center text-purple-600 dark:text-white">
                 <a
                   href="https://pokepro-frontend.herokuapp.com/"
-                  className="mr-5 font-bold text-xl"
+                  className="mr-5 font-bold text-xl hover:scale-125 transition-all duration-300"
                 >
                   Project Link
                 </a>
                 <a
                   href="https://github.com/sramalho94/PokePro"
-                  className="mr-5 font-bold text-xl"
+                  className="mr-5 font-bold text-xl hover:scale-125 transition-all duration-300"
                 >
                   Github Link
                 </a>
@@ -498,7 +498,7 @@ export default function Home() {
       </main>
       <footer className="flex flex-row justify-center  bg-emerald-200 w-screen ">
         <ul className="flex flex-row text-center justify-center ">
-          <li className="flex flex-row align-middle justify-center text-purple-600">
+          <li className="flex flex-row align-middle justify-center text-purple-600 hover:scale-125 transition-all duration-300">
             <GoMarkGithub className="font-bold my-auto" />
             <a href="https://github.com/sramalho94" className="font-bold">
               Github Repo
