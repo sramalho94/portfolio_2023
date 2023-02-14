@@ -500,7 +500,10 @@ export default function Home() {
         <ul className="flex flex-row text-center justify-center ">
           <li className="flex flex-row align-middle justify-center text-purple-600 hover:scale-125 transition-all duration-300">
             <GoMarkGithub className="font-bold my-auto" />
-            <a href="https://github.com/sramalho94" className="font-bold">
+            <a
+              href="https://github.com/sramalho94/portfolio_2023"
+              className="font-bold"
+            >
               Github Repo
             </a>
           </li>
