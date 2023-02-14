@@ -129,7 +129,11 @@ export default function Home() {
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl mx-auto max-w-md dark:text-white">
               A software engineer who loves collaboration, meeting goals, and
-              always learning new things. Let's learn together!
+              always learning new things. Born and raised New Yorker, so I love
+              a good slice of pizza and the subway. (when it runs on time) I let
+              my passion for gaming and computer building lead me down the path
+              of software engineering. I love learning and working on both
+              Front-end and Back-end projects. Let's learn together!
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
