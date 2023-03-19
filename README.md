@@ -1,6 +1,6 @@
 # Stephan D Ramalho Portfolio
 
-![image](https://imgur.com/a/fDenaSa.png)
+![image](https://imgur.com/a/fDenaSa)
 
 ---
 
