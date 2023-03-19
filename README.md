@@ -14,8 +14,10 @@
 
 ## Getting Started
 
--`clone` the github repository -`cd` into the root of the directory
+---
 
+- `clone` the github repository
+- `cd` into the root of the directory
 - run `npm i` to install packages
 - run `npm start` to run the application
 
