@@ -127,7 +127,7 @@ export default function Home() {
             <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
               Web Developer
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl mx-auto max-w-md dark:text-white">
+            <p className="text-lg py-5 leading-8 text-gray-800 md:text-xl mx-auto max-w-md dark:text-white">
               A software engineer who loves collaboration, meeting goals, and
               always learning new things. Born and raised New Yorker, so I love
               a good slice of pizza and the subway. (when it runs on time) I let
