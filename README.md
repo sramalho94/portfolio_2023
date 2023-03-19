@@ -1,38 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Stephan D Ramalho Portfolio
+
+![image](https://imgur.com/a/fDenaSa.png)
+
+---
+
+## **_Description_**
+
+### A portfolio of my Software Engineering projects
+
+### Built Using Next.js, Tailwindcss
+
+---
 
 ## Getting Started
 
-First, run the development server:
+-`clone` the github repository -`cd` into the root of the directory
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- run `npm i` to install packages
+- run `npm start` to run the application
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### **_*Technologies Used*_**
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Next.js
+- Tailwindcss
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Links
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### [LinkedIn](http://www.linkedin.com/in/stephan-ramalho)
 
-## Learn More
+### **_Acknowledgements_**
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- First and foremost, I would like to express my sincerest gratitude to the recruiters, professionals, and peers who are taking the time to review my portfolio. Your consideration and feedback are invaluable as I continue to grow and refine my skills in the software engineering field.
+- I am deeply grateful to the numerous software engineers who have generously shared their knowledge, expertise, and encouragement throughout my journey. Their guidance and collaboration have been instrumental in honing my skills and fostering a passion for learning and innovation.
+- Lastly, I extend my heartfelt thanks to the creators and contributors of Next.js and TailwindCSS. Their dedication to developing and maintaining these robust, performance-oriented frameworks has provided the software engineering community with versatile tools that empower developers to build scalable, modular, and visually appealing web applications.
