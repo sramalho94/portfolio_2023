@@ -1,3 +1,7 @@
+// This was the previous method I used to render out my projects
+// It has been replaced by mapping through the projectData.js and passing the
+// data down into the Project component through props
+
 ;<div
   className="basis-1/3 flex-1 shadow-xl bg-gradient-to-tr from-emerald-200 rounded-lg"
   id="project4"
