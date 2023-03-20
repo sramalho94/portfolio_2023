@@ -26,6 +26,8 @@ import faultsinour from '../public/faultsinourstars.png'
 import faults2 from '../public/faults2.png'
 import pokepro from '../public/PokePro.png'
 import { useState, useRef } from 'react'
+import Project from '@/components/Project'
+import projects from '../projectsData'
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
@@ -286,217 +288,19 @@ export default function Home() {
               An ever-growing list of the projects I have created and worked on
             </p>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 shadow-xl bg-gradient-to-tr from-emerald-200 rounded-lg">
-              <Image
-                src={battleships}
-                className="rounded-lg object-cover w-10 h-10"
-                width={'100%'}
-                height={'100%'}
-                layout="responsive"
-              />
-              <p className="text-xl font-bold pt-8 pb-2 text-center  dark:text-white">
-                Admiral Stephan's BattleShips
-              </p>
-              <p className="py-2 text-center dark:text-white">
-                In this first project, I created a web browser version of the
-                classic board game, Battleship. Using only vanilla JavaScript I
-                created a fully functional game where the player goes against an
-                AI. When either the player or the AI runs out of ships, the game
-                is over.
-              </p>
-              <div className="flex flex-row py-2 justify-center text-purple-600 dark:text-white">
-                <a
-                  href="https://admiralstephanbattleship.surge.sh/"
-                  className="mr-5 font-bold text-xl hover:scale-125 transition-all duration-300"
-                >
-                  Project Link
-                </a>
-                <a
-                  href="https://github.com/sramalho94/Admiral-Stephan-Battleship-Project"
-                  className="mr-5 font-bold text-xl hover:scale-125 transition-all duration-300"
-                >
-                  Github Link
-                </a>
+          <div className="flex flex-wrap">
+            {projects.map((project) => (
+              <div key={project.name} className="mx-auto">
+                <Project
+                  name={project.name}
+                  image={project.image}
+                  description={project.description}
+                  projectLink={project.projectLink}
+                  githubLink={project.githubLink}
+                  technologies={project.technologies}
+                />
               </div>
-              <ul className="flex flex-row justify-center dark:text-white">
-                <li>
-                  <SiJavascript className="text-4xl text-center mx-auto pr-3" />
-                </li>
-                <li>
-                  <SiCss3 className="text-4xl text-center mx-auto pr-3" />
-                </li>
-                <li>
-                  <IoLogoHtml5 className="text-4xl text-center mx-auto pr-3" />
-                </li>
-              </ul>
-            </div>
-            <div className="basis-1/3 flex-1 shadow-xl bg-gradient-to-tr from-emerald-200 rounded-lg">
-              <Image
-                src={cornhub}
-                className="rounded-lg object-cover w-10 h-10"
-                width={'100%'}
-                height={'100%'}
-                layout="responsive"
-              />
-              <p className="text-xl font-bold pt-8 pb-2 text-center  dark:text-white">
-                Corney Island
-              </p>
-              <p className="py-2 text-center dark:text-white">
-                In this group hackathon project, our group created a theme
-                parked themed web page. There are a number of themes and
-                attractions to navigate through as you explore the page. The
-                user also has the capability to add and delete attractions as
-                well.
-              </p>
-              <div className="flex flex-row py-2 justify-center text-purple-600 dark:text-white">
-                <a
-                  href="https://corney-island2022.herokuapp.com/"
-                  className="mr-5 font-bold text-xl hover:scale-125 transition-all duration-300"
-                >
-                  Project Link
-                </a>
-                <a
-                  href="https://github.com/sramalho94/Corney_Island_Group_Project"
-                  className="mr-5 font-bold text-xl hover:scale-125 transition-all duration-300"
-                >
-                  Github Link
-                </a>
-              </div>
-              <ul className="flex flex-row justify-center dark:text-white">
-                <li>
-                  <SiJavascript className="text-4xl text-center mx-auto pr-3" />
-                </li>
-                <li>
-                  <SiCss3 className="text-4xl text-center mx-auto pr-3" />
-                </li>
-                <li>
-                  <SiMongodb className="text-4xl text-center mx-auto pr-3" />
-                </li>
-                <li>
-                  <SiExpress className="text-4xl text-center mx-auto pr-3" />
-                </li>
-                <li>
-                  <SiReact className="text-4xl text-center mx-auto pr-3" />
-                </li>
-                <li>
-                  <IoLogoNodejs className="text-4xl text-center mx-auto pr-3" />
-                </li>
-              </ul>
-            </div>
-            <div className="basis-1/3 flex-1 shadow-xl bg-gradient-to-tr from-emerald-200 rounded-lg">
-              <Image
-                src={faults2}
-                className="rounded-lg  w-10 h-1"
-                width={'100%'}
-                height={'100%'}
-                layout="responsive"
-              />
-              <p className="text-xl font-bold pt-8 pb-2 text-center  dark:text-white">
-                The Faults In Our Stars
-              </p>
-              <p className="py-2 text-center dark:text-white">
-                The Faults In Our Stars is a hyper-personalized, social
-                experience bringing astrology into the 22nd century. Our aim is
-                to create social circles revolving around zodiac signs. This
-                website will allow you to connect to people that are compatible
-                to your zodiac sign and at the same time rate the users based on
-                their personalities and sign compatibility; wether good or bad,
-                create new social circles, that will improve you work and love
-                life.
-              </p>
-              <div className="flex flex-row py-2 justify-center text-purple-600 dark:text-white">
-                <a
-                  href="https://starz-app.herokuapp.com/"
-                  className="mr-5 font-bold text-xl hover:scale-125 transition-all duration-300"
-                >
-                  Project Link
-                </a>
-                <a
-                  href="https://github.com/BrianDLara/The-Faults-In-Our-Stars_Frontend"
-                  className="mr-5 font-bold text-xl hover:scale-125 transition-all duration-300"
-                >
-                  Github Link
-                </a>
-              </div>
-              <div>
-                <ul className="flex flex-row justify-center dark:text-white">
-                  <li>
-                    <SiJavascript className="text-4xl text-center mx-auto pr-3" />
-                  </li>
-                  <li>
-                    <SiCss3 className="text-4xl text-center mx-auto pr-3" />
-                  </li>
-                  <li>
-                    <SiPostgresql className="text-4xl text-center mx-auto pr-3" />
-                  </li>
-                  <li>
-                    <SiExpress className="text-4xl text-center mx-auto pr-3" />
-                  </li>
-                  <li>
-                    <SiReact className="text-4xl text-center mx-auto pr-3" />
-                  </li>
-                  <li>
-                    <IoLogoNodejs className="text-4xl text-center mx-auto pr-3" />
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="basis-1/3 flex-1 shadow-xl bg-gradient-to-tr from-emerald-200 rounded-lg">
-              <Image
-                src={pokepro}
-                className="rounded-lg object-cover"
-                width={'100%'}
-                height={'100%'}
-                layout="responsive"
-              />
-              <p className="text-xl font-bold pt-8 pb-2 text-center  dark:text-white">
-                PokePro
-              </p>
-              <p className="py-2 text-center dark:text-white">
-                In this final project for General Assembly's Software
-                Engineering Immersive, I made a full stack web application that
-                allows users to look up trainers in the base pokemon games and
-                see their pokemon team. Suggestions are given on how to beat
-                each pokemon based on that Pokemon's type.
-              </p>
-              <div className="flex flex-row py-2 justify-center text-purple-600 dark:text-white">
-                <a
-                  href="https://pokepro-frontend.herokuapp.com/"
-                  className="mr-5 font-bold text-xl hover:scale-125 transition-all duration-300"
-                >
-                  Project Link
-                </a>
-                <a
-                  href="https://github.com/sramalho94/PokePro"
-                  className="mr-5 font-bold text-xl hover:scale-125 transition-all duration-300"
-                >
-                  Github Link
-                </a>
-              </div>
-              <div>
-                <ul className="flex flex-row justify-center dark:text-white">
-                  <li>
-                    <SiJavascript className="text-4xl text-center mx-auto pr-3" />
-                  </li>
-                  <li>
-                    <SiCss3 className="text-4xl text-center mx-auto pr-3" />
-                  </li>
-                  <li>
-                    <SiPostgresql className="text-4xl text-center mx-auto pr-3" />
-                  </li>
-                  <li>
-                    <SiExpress className="text-4xl text-center mx-auto pr-3" />
-                  </li>
-                  <li>
-                    <SiReact className="text-4xl text-center mx-auto pr-3" />
-                  </li>
-                  <li>
-                    <IoLogoNodejs className="text-4xl text-center mx-auto pr-3" />
-                  </li>
-                </ul>
-              </div>
-            </div>
+            ))}
           </div>
         </section>
       </main>
