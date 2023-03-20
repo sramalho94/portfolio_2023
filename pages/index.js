@@ -110,7 +110,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-purple-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="https://docs.google.com/document/d/142lWER44BbPiJk_PRyqOpccsorRWrZdhqd8rtPCMcNE/export?format=pdf"
+                  href="https://docs.google.com/document/d/1qUU8qrM5QRt43vvQsLlP9WlA3HbnpUfFIirALzvLK_A/export?format=pdf"
                 >
                   Resume
                 </a>
