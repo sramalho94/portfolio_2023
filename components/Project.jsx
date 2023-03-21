@@ -34,7 +34,7 @@ const Project = ({
   }
 
   return (
-    <div className="bg-purple-400  bg-gradient-to-tr from-emerald-200 flex flex-col justify-center align-middle  rounded-xl mx-2 my-2 ">
+    <div className="bg-purple-400  bg-gradient-to-tr from-emerald-200 flex flex-col justify-center align-middle  rounded-xl mx-2 my-2 dark:bg-black">
       <div className="relative h-72 w-full flex flex-row justify-center">
         <Image src={image} className="rounded-lg shadow-xl" fill />
       </div>
@@ -63,7 +63,9 @@ const Project = ({
         </p>
         <div className="flex flex-row justify-center">
           {technologies.map((tech) => (
-            <div key={tech}>{techIcon[tech]}</div>
+            <div key={tech} className="dark:text-white">
+              {techIcon[tech]}
+            </div>
           ))}
         </div>
       </div>
