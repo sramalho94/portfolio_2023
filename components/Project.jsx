@@ -11,7 +11,7 @@ import {
   SiTailwindcss
 } from 'react-icons/si'
 import { FaAws } from 'react-icons/fa'
-import { IoLogoNodejs } from 'react-icons/io'
+import { IoLogoHtml5, IoLogoNodejs } from 'react-icons/io'
 const Project = ({
   name,
   image,
@@ -30,7 +30,8 @@ const Project = ({
     tailwind: <SiTailwindcss className="text-4xl text-center mx-auto pr-3" />,
     mongodb: <SiMongodb className="text-4xl text-center mx-auto pr-3" />,
     next: <SiNextdotjs className="text-4xl text-center mx-auto pr-3" />,
-    aws: <FaAws className="text-4xl text-center mx-auto pr-3" />
+    aws: <FaAws className="text-4xl text-center mx-auto pr-3" />,
+    html: <IoLogoHtml5 className="text-4xl text-center mx-auto pr-3" />
   }
 
   return (
