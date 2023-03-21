@@ -137,17 +137,21 @@ export default function Home() {
             <a
               href="http://www.linkedin.com/in/stephan-ramalho"
               className="hover:scale-150 transition-all duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <AiFillLinkedin />
             </a>
             <a
               href="https://github.com/sramalho94"
               className="hover:scale-150 transition-all duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <GoMarkGithub />
             </a>
             <a
-              href="mailto:sramalho@fordham.edu"
+              href="mailto:sramalho@fordham.edu?subject=Inquiry%20Regarding%20Your%20Portfolio&body=Dear%20Stephan,%0D%0A%0D%0AI%20recently%20came%20across%20your%20portfolio%20and%20am%20interested%20in%20learning%20more%20about%20your%20skills%20and%20experience.%20Please%20find%20my%20contact%20details%20below:%0D%0A%0D%0AFirst%20Name:%0D%0ALast%20Name:%0D%0AEmail:%0D%0A%0D%0AI%20would%20appreciate%20the%20opportunity%20to%20discuss%20potential%20collaboration%20or%20job%20opportunities%20with%20you.%20Please%20feel%20free%20to%20reach%20out%20to%20me%20at%20your%20earliest%20convenience.%0D%0A%0D%0AThank%20you%20for%20your%20time%20and%20consideration.%0D%0A%0D%0ABest%20regards,"
               className="hover:scale-150 transition-all duration-300"
             >
               <AiOutlineMail />
