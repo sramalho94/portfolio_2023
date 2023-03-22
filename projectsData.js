@@ -63,6 +63,22 @@ const projects = [
     ]
   },
   {
+    image: '/subwaysurfers.png',
+    name: 'Subway Surfers',
+    description: `The Subway Surfers project is a full-stack MERN application designed to enable users to review the reliability and safety of New York City subway lines. Employing MongoDB, React.js, Node.js, and Express, the platform supports seamless CRUD operations through RESTful API calls and utilizes Mongoose for structuring MongoDB collections. The visually appealing user interface, designed with CSS3, includes a landing page displaying a navigation bar and submitted reviews. The navigation bar directs users to sign-up forms, review submission forms, and back to the landing page. Each review features buttons for easy deletion and updating, enhancing user experience. Subway Surfers provides an accessible platform for users to share insights on NYC subway lines' safety and reliability.`,
+    projectLink: 'https://subway-surfers2022.herokuapp.com/',
+    githubLink: 'https://github.com/sramalho94/SubwaySurfer',
+    technologies: [
+      'javascript',
+      'css',
+      'html',
+      'mongodb',
+      'express',
+      'react',
+      'node'
+    ]
+  },
+  {
     image: '/battleships.png',
     name: `Admiral Stephan's BattleShips`,
     description: `In this first project, I created a web browser version of the
