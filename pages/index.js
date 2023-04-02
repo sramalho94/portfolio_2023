@@ -310,6 +310,8 @@ export default function Home() {
             <a
               href="https://github.com/sramalho94/portfolio_2023"
               className="font-bold"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Github Repo
             </a>
