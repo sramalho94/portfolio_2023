@@ -46,6 +46,8 @@ const Project = ({
       <div className="flex flex-row py-2 justify-center text-purple-600 dark:text-white">
         <a
           href={projectLink}
+          target="_blank"
+          rel="noopener noreferrer"
           className="mr-5 font-bold text-xl hover:scale-125 transition-all duration-300"
         >
           Project Link
@@ -53,6 +55,8 @@ const Project = ({
         <a
           href={githubLink}
           className="mr-5 font-bold text-xl hover:scale-125 transition-all duration-300"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Github Link
         </a>
