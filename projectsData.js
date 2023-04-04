@@ -15,7 +15,7 @@ const projects = [
     allows users to look up trainers in the base pokemon games and
     see their pokemon team. Suggestions are given on how to beat
     each pokemon based on that Pokemon's type.`,
-    projectLink: 'https://pokepro-frontend.herokuapp.com/',
+    projectLink: 'https://www.pokebattlepro.com/',
     githubLink: 'https://github.com/sramalho94/PokePro',
     technologies: [
       'javascript',
