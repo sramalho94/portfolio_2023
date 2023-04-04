@@ -21,12 +21,19 @@
 - run `npm i` to install packages
 - run `npm start` to run the application
 
+### Getting started with docker
+
+- run `docker pull sramalho94/sdrportfolio:latest`
+- run `docker run -p 3000:3000 --name sdrportfolio sramalho94/sdrportfolio:latest`
+- got to http://localhost:3000 to see the application
+
 ---
 
 ### **_*Technologies Used*_**
 
 - Next.js
 - Tailwindcss
+- Docker
 
 ## Links
 
