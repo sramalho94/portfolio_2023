@@ -23,6 +23,7 @@ import code from '../public/code.png'
 import { useState, useRef } from 'react'
 import Project from '@/components/Project'
 import projects from '../projectsData'
+import EmailForm from '@/components/EmailForm'
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
@@ -156,6 +157,9 @@ export default function Home() {
             >
               <AiOutlineMail />
             </a>
+          </div>
+          <div>
+            <EmailForm />
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96  md:w-96">
             <Image src={pictureOfMe} fill={true} objectFit="cover" />
