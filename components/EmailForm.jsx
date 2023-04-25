@@ -39,7 +39,7 @@ const EmailForm = () => {
   }
 
   return (
-    <div className="flex items-center min-h-screen">
+    <div className="flex items-center m-3">
       <form onSubmit={handleSubmit} className="w-full">
         <div className="mb-4">
           <label htmlFor="name" className="block text-sm font-medium">
