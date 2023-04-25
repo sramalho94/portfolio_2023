@@ -165,7 +165,7 @@ export default function Home() {
           </div>
           {showEmailForm && (
             <div className="email-form-container w-1/3 flex flex-row justify-center mx-auto">
-              <EmailForm />
+              <EmailForm darkMode={darkMode} />
             </div>
           )}
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96  md:w-96">

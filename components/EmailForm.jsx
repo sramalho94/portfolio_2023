@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const EmailForm = () => {
+const EmailForm = ({ darkMode }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -39,10 +39,17 @@ const EmailForm = () => {
   }
 
   return (
-    <div className="flex items-center m-3">
-      <form onSubmit={handleSubmit} className="w-full">
+    <div
+      className={`flex items-center m-3 ${
+        darkMode ? 'dark' : ''
+      } bg-emerald-200 p-3 rounded-xl shadow-xl dark:bg-emerald-500 dark:bg-gradient-to-r from-teal-500`}
+    >
+      <form onSubmit={handleSubmit} className="w-full ">
         <div className="mb-4">
-          <label htmlFor="name" className="block text-sm font-medium">
+          <label
+            htmlFor="name"
+            className="block text-sm font-medium text-center dark:text-white"
+          >
             Name
           </label>
           <input
@@ -56,7 +63,10 @@ const EmailForm = () => {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="email" className="block text-sm font-medium">
+          <label
+            htmlFor="email"
+            className="block text-sm font-medium text-center dark:text-white"
+          >
             Email
           </label>
           <input
@@ -70,7 +80,10 @@ const EmailForm = () => {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="message" className="block text-sm font-medium">
+          <label
+            htmlFor="message"
+            className="block text-sm font-medium text-center dark:text-white"
+          >
             Message
           </label>
           <textarea
@@ -82,12 +95,14 @@ const EmailForm = () => {
             required
           ></textarea>
         </div>
-        <button
-          type="submit"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        >
-          Send
-        </button>
+        <div className="flex flex-row justify-center">
+          <button
+            type="submit"
+            className="bg-purple-200 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded dark:bg-purple-600"
+          >
+            Send
+          </button>
+        </div>
       </form>
     </div>
   )
