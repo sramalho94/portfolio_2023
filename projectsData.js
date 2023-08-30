@@ -1,5 +1,22 @@
 const projects = [
   {
+    image: '/CommunityTestLab.png',
+    name: 'Community Test Lab',
+    description:
+      'As the Dev Lead of a 9 person team, as part of The Opportunity Project 2023, I lead the development of a full-stack application that allows users to report Covid-19 test results, and access a data dashboard that displays Covid-19 statistics. We implemented unit tests for our Postgres Sequelize back-end using Jest. We integrated this tests into a CI pipeline using Github Actions. Our front-end is a React-native application that was built using TypeScript. Styling for our front-end was applied using Nativewindcss. Our back-end was deployed to AWS RDS and Elastic Beanstalk. Our front-end is being reviewed for the App Store and Google Play.',
+    projectLink: 'https://www.youtube.com/watch?v=4eHxm5Mdk98',
+    githubLink: 'https://github.com/sramalho94/TOP_Frontend',
+    technologies: [
+      'aws',
+      'react',
+      'express',
+      'tailwind',
+      'typescript',
+      'postgres',
+      'node'
+    ]
+  },
+  {
     image: '/Allstate_screenshot.png',
     name: 'Allstate Carpets',
     description: `I led a software development project that involved designing a web application for a client using Next13 technology. My colleague and I applied tailwindcss styling to enhance the user interface and incorporated a touch-enabled slideshow to improve user experience. We deployed the application on Amazon Web Services (AWS) and attached it to a custom domain that the customer had previously purchased. We followed a professional and technical approach to ensure the application met the client's requirements and adhered to industry best practices. Our aim was to deliver a high-quality web application that met the client's needs and exceeded their expectations.`,
