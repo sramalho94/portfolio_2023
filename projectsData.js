@@ -3,7 +3,7 @@ const projects = [
     image: '/CommunityTestLab.png',
     name: 'Community Test Lab',
     description:
-      'As the Dev Lead of a 9 person team, as part of The Opportunity Project 2023, I lead the development of a full-stack application that allows users to report Covid-19 test results, and access a data dashboard that displays Covid-19 statistics. We implemented unit tests for our Postgres Sequelize back-end using Jest. We integrated this tests into a CI pipeline using Github Actions. Our front-end is a React-native application that was built using TypeScript. Styling for our front-end was applied using Nativewindcss. Our back-end was deployed to AWS RDS and Elastic Beanstalk. Our front-end is being reviewed for the App Store and Google Play.',
+      'As the Dev Lead for a 9-person team in The Opportunity Project 2023, I directed the development of a full-stack application for the Community Test Lab. This platform facilitates efficient Covid-19 test result reporting and provides a user-friendly data dashboard displaying key statistics. Implementing unit tests using Jest ensured the reliability of our Postgres Sequelize back-end, seamlessly integrated into our CI pipeline via Github Actions. Our React-native front-end, built with TypeScript and styled using Nativewindcss, promises a polished user experience. Deployment to AWS RDS and Elastic Beanstalk optimized performance, while our front-end awaits review for App Store and Google Play inclusion, reflecting our commitment to quality and innovation.',
     projectLink: 'https://www.youtube.com/watch?v=4eHxm5Mdk98',
     githubLink: 'https://github.com/sramalho94/TOP_Frontend',
     technologies: [
