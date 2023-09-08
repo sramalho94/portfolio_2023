@@ -12,7 +12,8 @@ import {
   SiExpress,
   SiFlask,
   SiPostgresql,
-  SiMongodb
+  SiMongodb,
+  SiTypescript
 } from 'react-icons/si'
 import { IoLogoPython, IoLogoHtml5, IoLogoNodejs } from 'react-icons/io'
 import { RiVuejsFill } from 'react-icons/ri'
@@ -187,6 +188,10 @@ export default function Home() {
             className="flex flex-wrap  md:flex-row sm:w-screen  md:w-auto px-2 mx-5 py-5 align-middle rounded-lg justify-center shadow-2xl dark:text-white
             "
           >
+            <li className="flex flex-col justify-center px-3">
+              <SiTypescript className="text-4xl text-center mx-auto" />
+              <p>TypeScript</p>
+            </li>
             <li className="flex flex-col justify-center px-3">
               <SiJavascript className="text-4xl text-center mx-auto" />
               <p>JavaScript</p>
