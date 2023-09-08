@@ -13,7 +13,8 @@ import {
   SiFlask,
   SiPostgresql,
   SiMongodb,
-  SiTypescript
+  SiTypescript,
+  SiRust
 } from 'react-icons/si'
 import { IoLogoPython, IoLogoHtml5, IoLogoNodejs } from 'react-icons/io'
 import { RiVuejsFill } from 'react-icons/ri'
@@ -71,12 +72,13 @@ export default function Home() {
         <link rel="icon" href="/logo.png" />
       </Head>
       <main className="bg-purple-200 px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+        {/* Nav Section */}
         <header className=" flex flex-row justify-center mx-auto bg-emerald-200 fixed top-0 inset-x-0 z-50">
           <ul className="flex flex-row">
             <li>
               <a
                 href="#"
-                className="mr-10 font-bold text-purple-500"
+                className="mr-10 font-bold text-purple-500 hover:underline"
                 onClick={handleClickAboutMe}
               >
                 About Me
@@ -85,7 +87,7 @@ export default function Home() {
             <li>
               <a
                 href="#"
-                className="mr-10 font-bold text-purple-500"
+                className="mr-10 font-bold text-purple-500 hover:underline"
                 onClick={handleClickMySkills}
               >
                 My Skills
@@ -94,7 +96,7 @@ export default function Home() {
             <li>
               <a
                 href="#"
-                className="mr-10 font-bold text-purple-500"
+                className="mr-10 font-bold text-purple-500 hover:underline"
                 onClick={handleClickPortfolio}
               >
                 Portfolio
@@ -102,10 +104,12 @@ export default function Home() {
             </li>
           </ul>
         </header>
+
+        {/* Header Section */}
         <section className="mb-20 ">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons dark:text-white">
-              sramalho@fordham.edu
+              stephanramalho@gmail.com
             </h1>
             <ul className="flex items-center">
               <li>
@@ -124,55 +128,72 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10" ref={targetRef1}>
-            <h2 className="text-5xl py-2 text-purple-600 font-medium md:text-6xl">
-              Stephan D. Ramalho
-            </h2>
-            <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
-              Web Developer
-            </h3>
-            <p className="text-lg py-5 leading-8 text-gray-800 md:text-xl mx-auto max-w-md dark:text-white">
-              A software engineer who loves collaboration, meeting goals, and
-              always learning new things. Born and raised New Yorker, so I love
-              a good slice of pizza and the subway. (when it runs on time) I let
-              my passion for gaming and computer building lead me down the path
-              of software engineering. I love learning and working on both
-              Front-end and Back-end projects. Let's learn together!
-            </p>
-          </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
-            <a
-              href="http://www.linkedin.com/in/stephan-ramalho"
-              className="hover:scale-150 transition-all duration-300"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <AiFillLinkedin />
-            </a>
-            <a
-              href="https://github.com/sramalho94"
-              className="hover:scale-150 transition-all duration-300"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <GoMarkGithub />
-            </a>
-            <a
-              onClick={toggleEmailForm}
-              className="hover:scale-150 transition-all duration-300"
-            >
-              <AiOutlineMail />
-            </a>
+          <div
+            className="text-center p-10 flex flex-col mx-auto min-w-screen max-w-screen justify-center md:flex-row md:space-x-5"
+            ref={targetRef1}
+          >
+            <div className=" mx-auto bg-gradient-to-b from-teal-500 rounded-full w-72 h-72 mt-20 overflow-hidden aspect-w-1 aspect-h-1 md:h-96 md:w-96">
+              <div className="relative flex justify-center items-center w-full h-full">
+                <Image
+                  src={pictureOfMe}
+                  fill={true}
+                  cover="true"
+                  alt="profile_pic"
+                  className="rounded-full"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col md:ml-7">
+              <h2 className="text-5xl py-2 text-purple-600 font-medium md:text-6xl">
+                Stephan D. Ramalho
+              </h2>
+              <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
+                Web Developer
+              </h3>
+              <p className="text-lg py-5 leading-8 text-gray-800 md:text-xl mx-auto max-w-md dark:text-white">
+                A software engineer who loves collaboration, meeting goals, and
+                always learning new things. Born and raised New Yorker, so I
+                love a good slice of pizza and the subway. (when it runs on
+                time) I let my passion for gaming and computer building lead me
+                down the path of software engineering. I love learning and
+                working on both Front-end and Back-end projects. Let's learn
+                together!
+              </p>
+
+              <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
+                <a
+                  href="http://www.linkedin.com/in/stephan-ramalho"
+                  className="hover:scale-150 transition-all duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillLinkedin />
+                </a>
+                <a
+                  href="https://github.com/sramalho94"
+                  className="hover:scale-150 transition-all duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <GoMarkGithub />
+                </a>
+                <a
+                  onClick={toggleEmailForm}
+                  className="hover:scale-150 transition-all duration-300"
+                >
+                  <AiOutlineMail />
+                </a>
+              </div>
+            </div>
           </div>
           {showEmailForm && (
             <div className="email-form-container w-1/3 flex flex-row justify-center mx-auto">
               <EmailForm darkMode={darkMode} />
             </div>
           )}
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96  md:w-96">
-            <Image src={pictureOfMe} fill={true} objectFit="cover" />
-          </div>
         </section>
+
+        {/* Skills Section */}
         <section ref={targetRef2}>
           <div className="text-center">
             <span className="text-purple-500 text-5xl font-bold">
@@ -201,6 +222,10 @@ export default function Home() {
               <p>Python</p>
             </li>
             <li className="flex flex-col justify-center px-3">
+              <SiRust className="text-4xl text-center mx-auto" />
+              <p>Rust</p>
+            </li>
+            <li className="flex flex-col justify-center px-3">
               <IoLogoHtml5 className="text-4xl text-center mx-auto" />
               <p>Html5</p>
             </li>
@@ -213,6 +238,8 @@ export default function Home() {
               <p>SQL</p>
             </li>
           </ul>
+
+          {/* Front-end skills */}
           <div className="lg:flex gap-20 mx-0">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gradient-to-r from-teal-600">
               <Image
@@ -220,6 +247,7 @@ export default function Home() {
                 width={100}
                 height={100}
                 className="mx-auto"
+                alt="front-end logo"
               />
               <h3 className="text-3xl font-bold pt-8 pb-2 dark:text-white">
                 Responsive Front-end Projects
@@ -257,6 +285,7 @@ export default function Home() {
                 width={100}
                 height={100}
                 className="mx-auto"
+                alt="back-end logo"
               />
               <h3 className="text-3xl font-bold pt-8 pb-2 dark:text-white">
                 Intelligent Back-end Design
