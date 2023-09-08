@@ -61,7 +61,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
       </Head>
-      <main className="bg-purple-200 px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+      <main className="bg-purple-200 px-10 md:px-20 lg:px-40 dark:bg-gray-900 ">
         {/* Nav Section */}
         <header className=" flex flex-row justify-center mx-auto bg-emerald-200 fixed top-0 inset-x-0 z-50">
           <ul className="flex flex-row">
@@ -97,11 +97,11 @@ export default function Home() {
 
         {/* Header Section */}
         <section className="mb-20 ">
-          <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons dark:text-white">
+          <nav className="py-10 mb-12 flex justify-between ">
+            <h1 className="text-sm font-burtons dark:text-white md:text-lg">
               stephanramalho@gmail.com
             </h1>
-            <ul className="flex items-center">
+            <ul className="flex flex-row items-start md:items-center">
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
@@ -119,18 +119,20 @@ export default function Home() {
             </ul>
           </nav>
           <div
-            className="text-center p-10 flex flex-col mx-auto min-w-screen max-w-screen justify-center md:flex-row md:space-x-5"
+            className="text-center mb-10 flex flex-col mx-auto min-w-screen max-w-screen justify-center md:flex-row md:space-x-5"
             ref={targetRef1}
           >
-            <div className=" mx-auto bg-gradient-to-b from-teal-500 rounded-full w-72 h-72 mt-20 overflow-hidden aspect-w-1 aspect-h-1 md:h-96 md:w-96">
-              <div className="relative flex justify-center items-center w-full h-full">
+            <div className="flex flex-row justify-center">
+              <div className="relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 overflow-hidden aspect-w-1 aspect-h-1 md:h-96 md:w-96 md:mt-20">
+                {/* <div className="relative flex justify-center items-center w-full h-full"> */}
                 <Image
                   src={pictureOfMe}
                   fill={true}
                   cover="true"
                   alt="profile_pic"
-                  className="rounded-full"
+                  className="rounded-sm"
                 />
+                {/* </div> */}
               </div>
             </div>
             <div className="flex flex-col md:ml-7">
