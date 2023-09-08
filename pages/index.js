@@ -39,28 +39,18 @@ export default function Home() {
     setShowEmailForm(!showEmailForm)
   }
 
-  const handleClickAboutMe = (event) => {
-    event.preventDefault()
-    window.scrollTo({
-      top: targetRef1.current.offsetTop - 40,
-      behavior: 'smooth'
-    })
+  const scrollToRef = (ref) => {
+    if (ref && ref.current) {
+      window.scrollTo({
+        top: ref.current.offsetTop - 40,
+        behavior: 'smooth'
+      })
+    }
   }
 
-  const handleClickMySkills = (event) => {
+  const handleClickScroll = (event, ref) => {
     event.preventDefault()
-    window.scrollTo({
-      top: targetRef2.current.offsetTop - 40,
-      behavior: 'smooth'
-    })
-  }
-
-  const handleClickPortfolio = (event) => {
-    event.preventDefault()
-    window.scrollTo({
-      top: targetRef3.current.offsetTop - 40,
-      behavior: 'smooth'
-    })
+    scrollToRef(ref)
   }
 
   return (
@@ -79,7 +69,7 @@ export default function Home() {
               <a
                 href="#"
                 className="mr-10 font-bold text-purple-500 hover:underline"
-                onClick={handleClickAboutMe}
+                onClick={(event) => handleClickScroll(event, targetRef1)}
               >
                 About Me
               </a>
@@ -88,7 +78,7 @@ export default function Home() {
               <a
                 href="#"
                 className="mr-10 font-bold text-purple-500 hover:underline"
-                onClick={handleClickMySkills}
+                onClick={(event) => handleClickScroll(event, targetRef2)}
               >
                 My Skills
               </a>
@@ -97,7 +87,7 @@ export default function Home() {
               <a
                 href="#"
                 className="mr-10 font-bold text-purple-500 hover:underline"
-                onClick={handleClickPortfolio}
+                onClick={(event) => handleClickScroll(event, targetRef3)}
               >
                 Portfolio
               </a>
