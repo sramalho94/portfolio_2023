@@ -119,12 +119,11 @@ export default function Home() {
             </ul>
           </nav>
           <div
-            className="text-center mb-10 flex flex-col mx-auto min-w-screen max-w-screen justify-center md:flex-row md:space-x-5"
+            className="text-center mb-10  flex flex-col mx-auto min-w-screen max-w-screen justify-center md:flex-row md:space-x-5 md:p-5"
             ref={targetRef1}
           >
             <div className="flex flex-row justify-center">
               <div className="relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 overflow-hidden aspect-w-1 aspect-h-1 md:h-96 md:w-96 md:mt-20">
-                {/* <div className="relative flex justify-center items-center w-full h-full"> */}
                 <Image
                   src={pictureOfMe}
                   fill={true}
@@ -132,7 +131,6 @@ export default function Home() {
                   alt="profile_pic"
                   className="rounded-sm"
                 />
-                {/* </div> */}
               </div>
             </div>
             <div className="flex flex-col md:ml-7">
@@ -270,6 +268,8 @@ export default function Home() {
                 </li>
               </ul>
             </div>
+
+            {/* back-end skills */}
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gradient-to-l from-teal-600">
               <Image
                 id="wrong"
@@ -315,6 +315,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Portfolio Section */}
         <section ref={targetRef3}>
           <div>
             <h3 className="text-5xl font-bold py-1 dark:text-white text-center m-auto text-purple-500">
@@ -340,6 +342,8 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      {/* Footer section */}
       <footer className="flex flex-row justify-center  bg-emerald-200 w-screen ">
         <ul className="flex flex-row text-center justify-center ">
           <li className="flex flex-row align-middle justify-center text-purple-600 hover:scale-125 transition-all duration-300">
