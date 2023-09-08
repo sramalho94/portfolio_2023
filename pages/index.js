@@ -283,7 +283,7 @@ export default function Home() {
                 </li>
                 <li className="flex flex-col justify-center px-3">
                   <SiMongodb className="text-4xl text-center mx-auto" />
-                  <p>PostgreSQL</p>
+                  <p>Mongo</p>
                 </li>
               </ul>
             </div>
