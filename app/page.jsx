@@ -1,3 +1,5 @@
+'use client'
+
 import Head from 'next/head'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillLinkedin, AiOutlineMail } from 'react-icons/ai'
