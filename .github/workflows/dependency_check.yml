@@ -50,7 +50,7 @@ jobs:
               repo: context.repo.repo,
               body: body
             });
-            fs.writeFileSync(process.env.GITHUB_ENV, `AUDIT_RESULTS=${auditResults}\nAUDIT_WARNINGS=${auditWarnings}`);
+            fs.appendFileSync(process.env.GITHUB_ENV, `AUDIT_RESULTS=${auditResults}\nAUDIT_WARNINGS=${auditWarnings}`);
 
       - name: Check for Issues and Reject PR
         run: |
