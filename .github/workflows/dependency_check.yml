@@ -29,33 +29,16 @@ jobs:
 
       - name: Comment on PR with Issues
         id: comment
-        uses: actions/github-script@0.9.0
-        with:
-          script: |
-            const fs = require('fs');
-            const auditResults = fs.readFileSync('audit-results.json', 'utf-8');
-            const auditWarnings = fs.readFileSync('audit-warnings.json', 'utf-8');
-            const results = JSON.parse(auditResults);
-            const warnings = JSON.parse(auditWarnings);
-            let body = "PR has dependency issues:\n";
-            if (results.metadata.vulnerabilities > 0) {
-              body += "Vulnerabilities:\n" + JSON.stringify(results.actions);
-            }
-            if (warnings.metadata.vulnerabilities > 0) {
-              body += "Audit Warnings:\n" + JSON.stringify(warnings.actions);
-            }
-            github.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: body
-            });
-            fs.appendFileSync(process.env.GITHUB_ENV, `AUDIT_RESULTS=${auditResults}\nAUDIT_WARNINGS=${auditWarnings}`);
+        run: |
+          echo "PR has dependency issues:"
+          cat audit-results.json
+          cat audit-warnings.json
+        shell: bash
 
       - name: Check for Issues and Reject PR
         run: |
-          auditResults=$AUDIT_RESULTS
-          auditWarnings=$AUDIT_WARNINGS
+          auditResults=$(cat audit-results.json)
+          auditWarnings=$(cat audit-warnings.json)
           if [ -z "$auditResults" ] && [ -z "$auditWarnings" ]; then
             echo "No dependency issues found. PR is safe to merge."
             exit 0
