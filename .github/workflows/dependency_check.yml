@@ -3,7 +3,7 @@ name: Dependency Check
 on:
   pull_request:
     branches:
-      - main
+      - staging
 
 jobs:
   check_dependencies:
@@ -25,26 +25,26 @@ jobs:
         run: npm audit > issues/issues-file.txt || true
 
       - name: Comment on PR with Issues
-        uses: actions/github-script@0.9.0
-        with:
-          script: |
-            const fs = require('fs');
-            const issues = fs.readFileSync('issues/issues-file.txt', 'utf-8');
-            if (!issues.includes("found 0 vulnerabilities")) {
-              github.issues.createComment({
-                issue_number: context.issue.number,
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                body: `PR has dependency issues:\n${issues}`,
-              });
-            }
+        id: comment
+        run: |
+          const fs = require('fs');
+          const issues = fs.readFileSync('issues/issues-file.txt', 'utf-8');
+          if (!issues.includes("found 0 vulnerabilities")) {
+            echo "PR has dependency issues:\n${issues}" > pr_comment.txt
+          }
+
+      - name: Set Comment Output
+        run: echo "COMMENT_ISSUES=$(cat pr_comment.txt)" >> $GITHUB_ENV
+
+      - name: Comment on PR if Issues
+        if: env.COMMENT_ISSUES != 'null'
+        run: echo "${{ env.COMMENT_ISSUES }}" | gh issue comment ${{ github.event.pull_request.number }} --file -
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Check for Critical Vulnerabilities and Reject PR
         run: |
-              if grep -q "critical" issues/issues-file.txt; then
-                echo "Critical dependency issues found. Rejecting PR."
-                exit 1
-              fi
+          if grep -q "critical" issues/issues-file.txt; then
+            echo "Critical dependency issues found. Rejecting PR."
+            exit 1
+          fi
