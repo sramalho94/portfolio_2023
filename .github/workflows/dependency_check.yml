@@ -30,11 +30,10 @@ jobs:
           const fs = require('fs');
           const issues = fs.readFileSync('issues/issues-file.txt', 'utf-8');
           if (!issues.includes("found 0 vulnerabilities")) {
-            echo "PR has dependency issues:\n${issues}" > pr_comment.txt
+            echo "PR has dependency issues:" > pr_comment.txt
+            echo "${issues}" >> pr_comment.txt
+            echo "COMMENT_ISSUES=$(cat pr_comment.txt)" >> "$GITHUB_ENV"
           }
-
-      - name: Set Comment Output
-        run: echo "COMMENT_ISSUES=$(cat pr_comment.txt)" >> $GITHUB_ENV
 
       - name: Comment on PR if Issues
         if: env.COMMENT_ISSUES != 'null'
@@ -46,5 +45,6 @@ jobs:
         run: |
           if grep -q "critical" issues/issues-file.txt; then
             echo "Critical dependency issues found. Rejecting PR."
+            echo "::error::Critical dependency issues found."
             exit 1
           fi
