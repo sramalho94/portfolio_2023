@@ -8,8 +8,6 @@ on:
 jobs:
   check_dependencies:
     runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Set up Node.js
@@ -33,21 +31,16 @@ jobs:
           if ! echo "$issues_content" | grep -q "found 0 vulnerabilities"; then
             echo "$issues_content" >> pr_comment.txt
             COMMENT_BODY=$(cat pr_comment.txt)
-            echo "COMMENT_BODY=$COMMENT_BODY" >> $GITHUB_ENV
-            echo "COMMENT_BODY_ACTION=set-env" >> $GITHUB_ENV
       
             # Get the PR number
             PR_NUMBER=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
       
             # Comment on the PR using GitHub REST API
-            echo "::set-env name=GITHUB_TOKEN::${{ secrets.GITHUB_TOKEN }}"
-            echo "GITHUB_TOKEN_ACTION=set-env" >> $GITHUB_ENV
-      
             curl -X POST \
-              -H "Authorization: Bearer $GITHUB_TOKEN" \
+              -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
               -H "Accept: application/vnd.github.v3+json" \
               "https://api.github.com/repos/${{ github.repository }}/issues/${PR_NUMBER}/comments" \
-              -d "{\"body\":\"$COMMENT_BODY\"}"
+              -d "{\"body\":\"$(echo "$COMMENT_BODY" | jq -s -R -r @uri)\"}"
           else
             echo "No dependency issues found."
           fi
