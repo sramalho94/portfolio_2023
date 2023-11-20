@@ -8,6 +8,8 @@ on:
 jobs:
   check_dependencies:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Set up Node.js
@@ -29,22 +31,17 @@ jobs:
           echo "PR has dependency issues:" > pr_comment.txt
           issues_content="$(cat issues/issues-file.txt)"
           if ! echo "$issues_content" | grep -q "found 0 vulnerabilities"; then
-            echo "$issues_content" >> pr_comment.txt
             echo "COMMENT_ISSUES=$(cat pr_comment.txt)" >> $GITHUB_ENV
             echo "COMMENT_ISSUES_ACTION=set-env" >> $GITHUB_ENV
           else
             echo "No dependency issues found."
           fi
-      
+        
           # Save GITHUB_TOKEN to an environment file
           echo "GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
       
         shell: bash
       
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
-
       - name: Check for Critical or High Vulnerabilities
         run: |
           if grep -qE "critical|high" issues/issues-file.txt; then
