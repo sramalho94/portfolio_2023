@@ -31,16 +31,26 @@ jobs:
           echo "PR has dependency issues:" > pr_comment.txt
           issues_content="$(cat issues/issues-file.txt)"
           if ! echo "$issues_content" | grep -q "found 0 vulnerabilities"; then
-            echo "COMMENT_ISSUES=$(cat pr_comment.txt)" >> $GITHUB_ENV
-            echo "COMMENT_ISSUES_ACTION=set-env" >> $GITHUB_ENV
+            echo "$issues_content" >> pr_comment.txt
+            COMMENT_BODY=$(cat pr_comment.txt)
+            echo "COMMENT_BODY=$COMMENT_BODY" >> $GITHUB_ENV
+            echo "COMMENT_BODY_ACTION=set-env" >> $GITHUB_ENV
+      
+            # Get the PR number
+            PR_NUMBER=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
+      
+            # Comment on the PR using GitHub REST API
+            echo "::set-env name=GITHUB_TOKEN::${{ secrets.GITHUB_TOKEN }}"
+            echo "GITHUB_TOKEN_ACTION=set-env" >> $GITHUB_ENV
+      
+            curl -X POST \
+              -H "Authorization: Bearer $GITHUB_TOKEN" \
+              -H "Accept: application/vnd.github.v3+json" \
+              "https://api.github.com/repos/${{ github.repository }}/issues/${PR_NUMBER}/comments" \
+              -d "{\"body\":\"$COMMENT_BODY\"}"
           else
             echo "No dependency issues found."
           fi
-        
-          # Save GITHUB_TOKEN to an environment file
-          echo "GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
-      
-        shell: bash
       
       - name: Check for Critical or High Vulnerabilities
         run: |
