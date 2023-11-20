@@ -25,21 +25,20 @@ jobs:
         run: npm audit > issues/issues-file.txt || true
 
       - name: Comment on PR with Issues
-        uses: actions/github-script@0.9.0
-        with:
-          script: |
-            const fs = require('fs');
-            const issues = fs.readFileSync('issues/issues-file.txt', 'utf-8');
-            if (!issues.includes("found 0 vulnerabilities")) {
-              github.issues.createComment({
-                issue_number: context.issue.number,
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                body: `PR has dependency issues:\n${issues}`,
-              });
-            }
+        run: |
+          echo "PR has dependency issues:" > pr_comment.txt
+          issues_content="$(cat issues/issues-file.txt)"
+          if ! echo "$issues_content" | grep -q "found 0 vulnerabilities"; then
+            echo "$issues_content" >> pr_comment.txt
+            echo "COMMENT_ISSUES=$(cat pr_comment.txt)" >> $GITHUB_ENV
+            echo "::set-output name=comment_issues::$COMMENT_ISSUES"
+          else
+            echo "No dependency issues found."
+          fi
+        shell: bash
+      
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Check for Critical or High Vulnerabilities
         run: |
